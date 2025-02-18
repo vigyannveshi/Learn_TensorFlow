@@ -1,4 +1,8 @@
-# Learn_Tensorflow
+# Learn Tensorflow
+
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/2560px-TensorFlow_logo.svg.png" width="250">
+</p>
 
 The repository is created to share content that I studied and resources I have used to learn Tensorflow.
 

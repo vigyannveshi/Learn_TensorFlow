@@ -17,12 +17,39 @@ I shall be refering the content, and add my understandings and works to this rep
 The creators of the course have worked very hard in their content, and please refer their course for their original work, which is far more than what I intend to reflect upon. 
 
 
-### Contents (I shall be covering):
-1. Tensorflow Fundementals
-2. Neural Network Regression
-3. Neural Network Classification
-4. Computer Vision and Convolutional Neural Network
-5. Transfer Learning 1: Feature Extraction
-6. Transfer Learning 2: Fine Tuning
-7. Transfer Learning 3: Scaling Up
-8. Time Series Fundementals
+### Contents:
+
+
+| **1. TensorFlow Fundamentals**  ||
+|---------|----------|
+| **Concept** | **Notebook** |
+| Creating tensors using `tf.constant()` | 1 |
+| Creating tensors using `tf.Variable()` | 1 |
+| Creating random tensors using `tf.random.distribution()` | 1 |
+| Shuffle the order of elements of tensor using `tf.random.shuffle()` | 2 |
+| Other ways to create tensors | 3 |
+| Getting information from tensors | 4 |
+| Indexing and expanding tensors | 5 |
+| Reshaping the tensor using `tf.reshape()` | 5 |
+| Adding an extra dimension to tensor using `tf.newaxis` or `tf.expand_dims()` | 5 |
+| Manipulating tensors with basic operations (+,-,*,/) | 6 |
+| Matrix Multiplication | 7 |
+| Dot Product | 7 |
+| Changing datatype of tensors using `tf.cast()` | 8 |
+| Aggregating tensors | 9 |
+| Finding positional maximum and minimum | 10 |
+| Squeezing a tensor `tf.squeeze()` | 11 |
+| One Hot Encoding `tf.one_hot(indices:tensor,depth:"number of classes")` | 12 |
+| Some more tensor functions and operations | 13 |
+| Tensors and Numpy | 14 |
+| Understanding Devices to speed up TensorFlow | 15 |
+| Exercise | 16 |
+
+
+<!-- 1. Neural Network Regression
+2. Neural Network Classification
+3. Computer Vision and Convolutional Neural Network
+4. Transfer Learning 1: Feature Extraction
+5. Transfer Learning 2: Fine Tuning
+6. Transfer Learning 3: Scaling Up
+7. Time Series Fundementals  -->

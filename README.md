@@ -20,7 +20,7 @@ The creators of the course have worked very hard in their content, and please re
 ### Contents:
 
 
-| <u>**1. TensorFlow Fundamentals**</u>  ||
+| <u>**1. Tensorflow Fundamentals**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 | --> Creating tensors using `tf.constant()` | 1 |

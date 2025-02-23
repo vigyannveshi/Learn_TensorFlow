@@ -1,3 +1,32 @@
+### Content
+
+| <u>**1. Tensorflow Fundamentals**</u>  ||
+|---------|----------|
+| **Concept** | **Notebook** |
+| --> Creating tensors using `tf.constant()` | 1 |
+| --> Creating tensors using `tf.Variable()` | 1 |
+| --> Creating random tensors using `tf.random.distribution()` | 1 |
+| --> Shuffle the order of elements of tensor using `tf.random.shuffle()` | 2 |
+| --> Other ways to create tensors | 3 |
+| --> Getting information from tensors | 4 |
+| --> Indexing and expanding tensors | 5 |
+| --> Reshaping the tensor using `tf.reshape()` | 5 |
+| --> Adding an extra dimension to tensor using `tf.newaxis` or `tf.expand_dims()` | 5 |
+| --> Manipulating tensors with basic operations (+,-,*,/) | 6 |
+| --> Matrix Multiplication | 7 |
+| --> Dot Product | 7 |
+| --> Changing datatype of tensors using `tf.cast()` | 8 |
+| --> Aggregating tensors | 9 |
+| --> Finding positional maximum and minimum | 10 |
+| --> Squeezing a tensor `tf.squeeze()` | 11 |
+| --> One Hot Encoding `tf.one_hot(indices:tensor,depth:"number of classes")` | 12 |
+| --> Some more tensor functions and operations | 13 |
+| --> Tensors and Numpy | 14 |
+| --> Understanding Devices to speed up TensorFlow | 15 |
+| --> Exercise | 16 |
+
+
+
 ### Notes (Introduction):
 * ML can be used for literally anything as long as you can convert it into numbers and program it to find patterns. Literally it could be any input or output from the universe. 
 

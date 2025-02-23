@@ -45,7 +45,7 @@ The creators of the course have worked very hard in their content, and please re
 | --> Understanding Devices to speed up TensorFlow | 15 |
 | --> Exercise | 16 |
 
-| <u>**1. Neural Network Regression with Tensorflow**</u>  ||
+<!-- | <u>**1. Neural Network Regression with Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Architecture of neural network regression model||
@@ -54,7 +54,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Steps in modelling||
 |--> Creating a model, compiling a model, fitting a model, evaulating a model
 |--> Different evaluation models||
-|--> Saving and loading models||
+|--> Saving and loading models|| -->
 
 
 

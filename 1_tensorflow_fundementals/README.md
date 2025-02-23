@@ -58,5 +58,3 @@ https://www.youtube.com/watch?v=f5liqUk0ZTw
     4. Evaluate the model 
     5. Improve through experimentation
     6. Save and reload your trained model
-
-* 

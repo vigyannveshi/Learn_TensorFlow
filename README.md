@@ -45,24 +45,22 @@ The creators of the course have worked very hard in their content, and please re
 | --> Understanding Devices to speed up TensorFlow | 15 |
 | --> Exercise | 16 |
 
-<!-- | <u>**1. Neural Network Regression with Tensorflow**</u>  ||
+<br>
+<br>
+
+
+| <u>**2. Neural Network Regression with Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Architecture of neural network regression model||
-|--> Input and output shapes of regression model (features and label) ||
-|--> Creating custom data to view and fit||
-|--> Steps in modelling||
-|--> Creating a model, compiling a model, fitting a model, evaulating a model
-|--> Different evaluation models||
-|--> Saving and loading models|| -->
+|--> Creating data for regression model| 1 |
+|--> Understanding input and output shapes (features and labels) | 1 |
+|--> Major steps in modelling with tensorflow | 2 |
+|--> Improving the model | 3 |
+|--> Evaluating the model | 4 | 
+|--> Train-Validate-Test split | 4 | 
+|--> Visualizing the data | 4 | 
+|--> Visualizing the model | 4 |  
+|--> Visualizing model predictions | 5 |  
+|--> Evaluating model's prediction in regression| 5 |  
+|--> Saving and loading a model | 5 |
 
-
-
-
-<!-- 1. Neural Network Regression
-1. Neural Network Classification
-2. Computer Vision and Convolutional Neural Network
-3. Transfer Learning 1: Feature Extraction
-4. Transfer Learning 2: Fine Tuning
-5. Transfer Learning 3: Scaling Up
-6. Time Series Fundementals --> -->

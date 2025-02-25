@@ -14,7 +14,7 @@
 |--> Visualizing model predictions | 5 |  
 |--> Evaluating model's prediction in regression| 5 |  
 |--> Saving and loading a model | 5 |
-|--> Capstone Project 1|main_1,main_2|
+|--> Capstone Project 1|main_1, main_2|
 |--> Capstone Project 2|main_1|
 
 

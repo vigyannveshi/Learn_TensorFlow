@@ -14,3 +14,11 @@
 |--> Visualizing model predictions | 5 |  
 |--> Evaluating model's prediction in regression| 5 |  
 |--> Saving and loading a model | 5 |
+|--> Capstone Project 1|main_1,main_2|
+|--> Capstone Project 2|main_1|
+
+
+### Notes (Introduction)
+* Regression Problem asks for `how much ?` or `how many ?`
+* Regression involves a numeric output
+* We have a dependent variable (outcome variable) and one or more independent variables (predictors, covariates, features)

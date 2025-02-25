@@ -1,5 +1,6 @@
-# files not to be shared
+# files to be ignored
 important_reference_links.txt
 **/*.h5
 **/*.keras
 **/*saved_model
+**/*model.png

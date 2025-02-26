@@ -65,4 +65,10 @@ The creators of the course have worked very hard in their content, and please re
 |--> Capstone Project 1|main_1, main_2|
 |--> Capstone Project 2|main_1|
 
+| <u>**3. Customizing Models**</u>  ||
+|---------|----------|
+| **Concept** | **Notebook** |
+|--> Custom training loop |1|
+|--> Custom loss function |2|
+|--> Custom model         |3|
 

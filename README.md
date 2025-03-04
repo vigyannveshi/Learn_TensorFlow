@@ -72,3 +72,10 @@ The creators of the course have worked very hard in their content, and please re
 |--> Custom loss function |2|
 |--> Custom model         |3|
 
+| <u>**4. Neural Network Classification with Tensorflow**</u>  ||
+|---------|----------|
+| **Concept** | **Notebook** |
+|--> Steps in modelling classification model with tensorflow |1|
+|-->  Using history of `model.fit()` |1|
+|-->  Finding the best learning rate |2|
+|--> Classification Evaluation Methods |3|

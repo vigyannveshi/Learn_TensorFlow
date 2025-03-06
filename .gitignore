@@ -4,3 +4,4 @@ important_reference_links.txt
 **/*.keras
 **/*saved_model
 **/*model.png
+**/*__pycache__

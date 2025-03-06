@@ -7,8 +7,11 @@
 |--> Using history of `model.fit()` |1|
 |--> Finding the best learning rate |2|
 |--> Classification Evaluation Methods |3|
-
-
+|--> Multiclass classification         |4|
+|--> Improving Predictions on Fashion MNIST using normalized data |5|
+|--> Finding ideal learning rate for Fashion MNIST |6|
+|--> Evaluating trained model on Fashion MNIST |6|
+|--> Understanding patterns learnt by our model|7|
 
 
 

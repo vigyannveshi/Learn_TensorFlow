@@ -112,8 +112,6 @@ def plot_confusion_matrix(confusion_matrix,figsize = (4,4),classes = None,title_
 
 
 
-
-
 def plot_custom_model(model, input_shape, show_shapes=True, show_activations=True,          
                       show_trainable_status=True,graph_size="8,8", dpi=100, node_width="1.5", node_height="0.5",ranksep="0.5", nodesep="0.3", title="Model Architecture", save_path=None):
     """
@@ -151,8 +149,7 @@ def plot_custom_model(model, input_shape, show_shapes=True, show_activations=Tru
         layer_type = type(layer).__name__
 
         # Get activation function
-        activation = getattr(layer, "activation", None)
-        activation_name = activation.__name__ if activation else "None"
+        activation_name = model.activations[layer_name]
 
         # Compute input & output shapes
         try:
@@ -160,9 +157,15 @@ def plot_custom_model(model, input_shape, show_shapes=True, show_activations=Tru
         except Exception:
             output_shape = "Unknown"
 
-        activation_name = activation_name if show_activations else "N/A"
-        # input_shape_str = str(x.shape) if show_shapes else "N/A"
-        trainable_status = "Yes" if layer.trainable else "No"
+        # checking trainable or not
+        if hasattr(layer, "weights") and len(layer.weights) > 0:
+            if layer.trainable:
+                trainable_status = "Yes"
+            else:
+                trainable_status = "No"
+        else:
+            trainable_status = "-"
+            
 
         # Ensure each row exists properly even if not all options are enabled
         act_row = f'<TR><TD COLSPAN="3" BGCOLOR="lightgreen">Activation: {activation_name}</TD></TR>' if show_activations else ""
@@ -200,7 +203,6 @@ def plot_custom_model(model, input_shape, show_shapes=True, show_activations=Tru
             dot.edge(prev_layer.name, layer_name)
 
         prev_layer = layer
-        x = layer(x)  # Pass dummy input through each layer
 
     if save_path:
         dot.render(save_path, format="png", cleanup=True)

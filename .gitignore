@@ -5,3 +5,6 @@ important_reference_links.txt
 **/*saved_model
 **/*model.png
 **/*__pycache__
+
+# datasets downloaded to be ignored
+**/*pizza_steak

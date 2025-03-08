@@ -72,6 +72,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Custom loss function |2|
 |--> Custom model         |3|
 
+
 | <u>**4. Neural Network Classification with Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
@@ -84,3 +85,12 @@ The creators of the course have worked very hard in their content, and please re
 |--> Finding ideal learning rate for Fashion MNIST |6|
 |--> Evaluating trained model on Fashion MNIST |6|
 |--> Understanding patterns learnt by our model|7|
+
+
+| <u>**4. Convolutional Neural Network & Computer Vision with Tensorflow**</u>  ||
+|---------|----------|
+| **Concept** | **Notebook** |
+|--> Building the first CNN (baseline model)|1|
+|--> Overcoming overfitting |2|
+|--> Data augmentation |3|
+|--> Making a prediction with our trained model on custom data |3|

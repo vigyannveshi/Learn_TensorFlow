@@ -1,6 +1,6 @@
 ### Content
 
-| <u>**4. Convolutional Neural Network & Computer Vision with Tensorflow**</u>  ||
+| <u>**5. Convolutional Neural Network & Computer Vision with Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Building the first CNN (baseline model)|1|

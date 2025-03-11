@@ -87,7 +87,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Understanding patterns learnt by our model|7|
 
 
-| <u>**4. Convolutional Neural Network & Computer Vision with Tensorflow**</u>  ||
+| <u>**5. Convolutional Neural Network & Computer Vision with Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Building the first CNN (baseline model)|1|

@@ -92,5 +92,10 @@ The creators of the course have worked very hard in their content, and please re
 | **Concept** | **Notebook** |
 |--> Building the first CNN (baseline model)|1|
 |--> Overcoming overfitting |2|
-|--> Data augmentation |3|
-|--> Making a prediction with our trained model on custom data |3|
+|--> Data augmentation |2|
+|--> Making a prediction with our trained model on custom data |2|
+|--> Multiclass image classification |3|
+|--> Visualizing each layer and activation output |3|
+|--> Adjust model hyperparams to reduce overfitting / beat the baseline model |4,5,6,7|
+|--> Making a prediction with our trained model on custom data (multi-class) |7|
+|--> Saving and loading our multi-class model |7|

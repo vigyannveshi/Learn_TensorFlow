@@ -11,7 +11,7 @@
 |--> Visualizing each layer and activation output |3|
 |--> Adjust model hyperparams to reduce overfitting / beat the baseline model |4,5,6,7|
 |--> Making a prediction with our trained model on custom data (multi-class) |7|
-|--> Saving our multi-class model |7|
+|--> Saving and loading our multi-class model |7|
 
 
 

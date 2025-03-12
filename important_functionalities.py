@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import itertools
 import graphviz
-
+import datetime as dt
 
 
 # visualizing model's predictions: 
@@ -208,3 +208,12 @@ def plot_custom_model(model, input_shape, show_shapes=True, show_activations=Tru
         dot.render(save_path, format="png", cleanup=True)
 
     return dot
+
+
+# create tensorboard callback (functionalized because we need to create a new one for each model)
+
+def create_tensorboard_callback(dir_name, experiment_name):
+    log_dir = dir_name + "/" + experiment_name + "/" + dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    tensorboard_callback = tf.keras.callbacks.Tensorboard(log_dir=log_dir)
+    print(f"Saving TensorBoard log files to : {log_dir}")
+    return tensorboard_callback

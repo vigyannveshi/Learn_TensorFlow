@@ -71,6 +71,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Custom training loop |1|
 |--> Custom loss function |2|
 |--> Custom model         |3|
+|--> Improving Custom model |4|
 
 
 | <u>**4. Neural Network Classification with Tensorflow**</u>  ||
@@ -99,3 +100,12 @@ The creators of the course have worked very hard in their content, and please re
 |--> Adjust model hyperparams to reduce overfitting / beat the baseline model |4,5,6,7|
 |--> Making a prediction with our trained model on custom data (multi-class) |7|
 |--> Saving and loading our multi-class model |7|
+
+| <u>**6. Transfer learning - feature extraction**</u>  ||
+|---------|----------|
+| **Concept** | **Notebook** |
+|--> Setting up callbacks |1|
+|--> Creating models using Tensorflow Hub |1|
+|--> Building and Compiling Tensorflow feature extraction model |1|
+|--> Resnet-50 v2 vs Efficient net b0 |1|
+|--> Visualization using TensorBoard |1|

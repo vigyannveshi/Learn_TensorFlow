@@ -3,9 +3,11 @@
 ### ------- FUNCTIONS -------###
 # plot_decision_boundary()
 # plot_confusion_matrix()
-# 
-# 
-# 
+# plot_custom_model()
+# create_tensorboard_callback
+# plot_loss_curves()
+# load_preprocess()
+# walkthrough_directories()
 ### ------- FUNCTIONS -------###
 
 ### imports needed
@@ -15,7 +17,7 @@ import numpy as np
 import itertools
 import graphviz
 import datetime as dt
-
+import os
 
 # visualizing model's predictions: 
 def plot_decision_boundary(X,y,model):
@@ -214,6 +216,79 @@ def plot_custom_model(model, input_shape, show_shapes=True, show_activations=Tru
 
 def create_tensorboard_callback(dir_name, experiment_name):
     log_dir = dir_name + "/" + experiment_name + "/" + dt.datetime.now().strftime("%Y%m%d-%H%M%S")
-    tensorboard_callback = tf.keras.callbacks.Tensorboard(log_dir=log_dir)
+    tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir)
     print(f"Saving TensorBoard log files to : {log_dir}")
     return tensorboard_callback
+
+
+# plotting validation and training curves separately
+
+def plot_loss_curves(history):
+    # loss
+    loss=history.history["loss"]
+    val_loss=history.history['val_loss']
+
+    # accuracy
+    accuracy=tf.multiply(history.history['accuracy'],100)
+    val_accuracy=tf.multiply(history.history['val_accuracy'],100)
+    
+    min_loss=tf.reduce_min(loss)
+    min_val_loss=tf.reduce_min(val_loss)
+    loc_loss=tf.argmin(loss)+1
+    loc_val_loss=tf.argmin(val_loss)+1
+
+    max_accuracy=tf.reduce_max(accuracy)
+    max_val_accuracy=tf.reduce_max(val_accuracy)
+    loc_acc=tf.argmax(accuracy)+1
+    loc_val_acc=tf.argmax(val_accuracy)+1
+
+    epochs = range(1,len(history.history["loss"])+1) # length of one of history object
+
+
+    # plotting
+    plt.figure()
+    fig,axs=plt.subplots(1,2,figsize=(8,3))
+    
+    # loss
+    axs[0].plot(epochs,loss,label=f'training loss (min:{min_loss:.2f})')
+    axs[0].scatter(loc_loss,min_loss,s=30,color=(1,0,0))
+    axs[0].plot(epochs,val_loss,label=f'validation loss (min:{min_val_loss:.2f})')
+    axs[0].scatter(loc_val_loss,min_val_loss,s=30,color=(1,0,0))
+    axs[0].set_xlabel('Epochs')
+    axs[0].set_ylabel('Loss')
+    axs[0].set_title('Training & Validation')
+    axs[0].legend()
+
+    # accuracy
+    axs[1].plot(epochs,accuracy,label=f'training accuracy (max:{max_accuracy:.2f}%)')
+    axs[1].scatter(loc_acc,max_accuracy,s=30,color=(0,1,0))
+    axs[1].plot(epochs,val_accuracy,label=f'validation accuracy (max:{max_val_accuracy:.2f}%)')
+    axs[1].scatter(loc_val_acc,max_val_accuracy,s=30,color=(0,1,0))
+    axs[1].set_xlabel('Epochs')
+    axs[1].set_ylabel('Loss/Accuracy')
+    axs[1].set_title('Training & Validation')
+    axs[1].legend()
+
+    plt.tight_layout()
+    plt.show()
+
+# load and pre-process image
+def load_preprocess(filename,shape=(224,224,3)):
+    # load the image
+    img=tf.io.read_file(filename=filename)
+    img=tf.image.decode_image(img)
+    
+    # resize
+    img=tf.image.resize(img,shape[:2])
+    # rescale/normalize image
+    img=img/255.0
+    return img
+
+
+# walkthrough directories
+def walkthrough_directories(dir_name:str):
+    '''
+    Walks through directories and prints the number of directories and files in each directory
+    '''
+    for dirpath,dirnames,filenames in os.walk(dir_name):
+        print(f"There are {len(dirnames)} directories and {len(filenames)} images in {dirpath}")

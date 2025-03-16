@@ -1,6 +1,6 @@
 ### Content
 
-| <u>**6. Transfer learning - feature extraction**</u>  ||
+| <u>**7. Transfer learning - fine tuning**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Using `tf.keras.preprocessing.image_dataset_from_directory()` |1|

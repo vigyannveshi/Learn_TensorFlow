@@ -8,6 +8,7 @@
 # plot_loss_curves()
 # load_preprocess()
 # walkthrough_directories()
+# compare_histories()
 ### ------- FUNCTIONS -------###
 
 ### imports needed
@@ -18,6 +19,7 @@ import itertools
 import graphviz
 import datetime as dt
 import os
+from sklearn.metrics import confusion_matrix
 
 # visualizing model's predictions: 
 def plot_decision_boundary(X,y,model):
@@ -61,22 +63,23 @@ def plot_decision_boundary(X,y,model):
 
 # prettifying confusion matrix:
 
-def plot_confusion_matrix(confusion_matrix,figsize = (4,4),classes = None,title_size = 15 ,label_size = 10, text_size = 8):
-    # create the confusion matrix
-    cm_norm=confusion_matrix.astype("float") / confusion_matrix.sum(axis=1)[:,np.newaxis] # normalize confusion matrix
-    n_classes = confusion_matrix.shape[0]
+def plot_conf_mat(y_true,y_pred,figsize = (4,4),classes = None,title_size = 15 ,label_size = 10, text_size = 8,savefig = False):
+
+    conf_mat=confusion_matrix(y_true,y_pred)
+    cm_norm=conf_mat.astype("float") / conf_mat.sum(axis=1)[:,np.newaxis] # normalize confusion matrix
+    n_classes = conf_mat.shape[0]
 
     fig,ax=plt.subplots(figsize=figsize)
 
     # create a matrix plot
-    cax=ax.matshow(confusion_matrix,cmap=plt.cm.Blues) 
+    cax=ax.matshow(conf_mat,cmap=plt.cm.Blues) 
     fig.colorbar(cax)
 
     # Create classes
     if classes:
         labels = classes
     else:
-        labels=np.arange(confusion_matrix.shape[0])
+        labels=np.arange(conf_mat.shape[0])
 
     # label the axes
     ax.set(title="Confusion Matrix",
@@ -91,6 +94,8 @@ def plot_confusion_matrix(confusion_matrix,figsize = (4,4),classes = None,title_
     # getting the x-axis labels to bottom
     ax.xaxis.set_label_position("bottom")
     ax.xaxis.tick_bottom()
+    # plotting the x-axis labels vertically
+    ax.xaxis.set_tick_params(rotation=70)
 
     # adjust label size
     ax.yaxis.label.set_size(label_size)
@@ -100,17 +105,20 @@ def plot_confusion_matrix(confusion_matrix,figsize = (4,4),classes = None,title_
     ax.title.set_size(title_size)
 
     # set the threshold for different colors
-    threshold = (confusion_matrix.max() + confusion_matrix.min())/2.0
+    threshold = (conf_mat.max() + conf_mat.min())/2.0
 
     # plot the text on each cell 
-    for i,j in itertools.product(range(confusion_matrix.shape[0]),range(confusion_matrix.shape[1])):
-        plt.text(j,i,f"{confusion_matrix[i,j]}\n({cm_norm[i,j]*100:.2f}%)",
+    for i,j in itertools.product(range(conf_mat.shape[0]),range(conf_mat.shape[1])):
+        plt.text(j,i,f"{conf_mat[i,j]}\n({cm_norm[i,j]*100:.2f}%)",
                 horizontalalignment = "center",
                 verticalalignment = "center",
-                color = "white" if confusion_matrix[i,j]>threshold else "black",
+                color = "white" if conf_mat[i,j]>threshold else "black",
                 size = text_size)
     
+    if savefig:
+        plt.savefig("confusion_matrix.png")
     plt.show()
+
 
 
 
@@ -292,3 +300,48 @@ def walkthrough_directories(dir_name:str):
     '''
     for dirpath,dirnames,filenames in os.walk(dir_name):
         print(f"There are {len(dirnames)} directories and {len(filenames)} images in {dirpath}")
+
+# compare histories
+def compare_histories(original_history,new_history,initial_epochs=5):
+    '''
+    Compares two tensorflow history objects.
+    '''
+
+    # Get original history measurements
+    acc = original_history.history["accuracy"]
+    loss = original_history.history["loss"]
+    val_acc = original_history.history["val_accuracy"]
+    val_loss = original_history.history["val_loss"]
+
+    # combine original history with new history
+    total_acc = acc + new_history.history["accuracy"]
+    total_loss = loss + new_history.history["loss"]
+
+    total_val_acc = val_acc + new_history.history["val_accuracy"]
+    total_val_loss = val_loss + new_history.history["val_loss"]
+
+    epochs=tf.range(1,len(total_acc)+1)
+
+    # make plots
+    plt.figure(figsize=(8, 3))
+    plt.subplot(1, 2, 1)
+    plt.xticks(epochs)
+    plt.plot(epochs,total_acc, label='Training Accuracy')  # plot total training accuracy
+    plt.plot(epochs,total_val_acc, label='Validation Accuracy')  # plot total validation accuracy
+    plt.plot([initial_epochs, initial_epochs],
+              plt.ylim(), label='Start Fine Tuning')  # create a line to show end of transfer learning
+    plt.legend(loc="lower right")
+    plt.title('Training and Validation Accuracy')
+
+    # plt.figure(figsize=(4, 8))
+    plt.subplot(1, 2, 2)
+    plt.xticks(epochs)
+    plt.plot(epochs,total_loss, label='Training Loss')  # plot total training loss
+    plt.plot(epochs,total_val_loss, label='Validation Loss')  # plot total validation loss
+    plt.plot([initial_epochs, initial_epochs],
+              plt.ylim(), label='Start Fine Tuning')  # create a line to show end of transfer learning
+    plt.legend(loc="upper right")
+    plt.title('Training and Validation Loss')
+    plt.suptitle('Comparing histories before and after fine-tuning',fontweight='bold')
+    plt.tight_layout()
+    plt.show()

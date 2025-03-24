@@ -153,3 +153,29 @@ The creators of the course have worked very hard in their content, and please re
 |--> `EarlyStopping` callback and `ReduceLRonPlateau()` callback setup |1|
 |--> Fine-tuning feature extraction model to beat Deep Food paper |1|
 |--> Evaluating model and comparing with DeepFood |1|
+
+
+| <u>**10. Natural Language Processing using Tensorflow**</u>  ||
+|---------|----------|
+| **Concept** | **Notebook** |
+|--> Introduction to NLP fundementals |1|
+|--> Visualizing a text dataset |1|
+|--> Splitting data into training and validation set |1|
+|--> Converting text to numbers using tokenization and embedding them |1|
+|--> Modelling a text-dataset (running series of experiments) |1|
+|--> Model 0: creation and evaluation |1|
+|--> Creating an evaluation metric function |1|
+|--> Model 1: [Feed forward Neural Network (dense model)]: creation and evaluation |2|
+|--> Visualizing our model's learned word embeddings |2|
+|--> Recurrent Neural Networks (RNNs)|3|
+|--> Model 2: [LSTM (RNN)] |3|
+|--> Model 3: [GRU (RNN)] |4|
+|--> Model 4: [Bidirectional LSTM (RNN)] |5|
+|--> Intuition behind 1D CNN |6|
+|--> Model 5: [1D CNNs] |6|
+|--> Model 6: Tensorflow hub pre-trained feature extractor |7|
+|--> Model 7: Tensorflow hub pre-trained feature extractor (10% of data) |8|
+|--> Compare all the modelling experiments |9|
+|--> Finding and Visualizing best-model's most wrong predictions |10| 
+|--> Making predictions on test-dataset |10| 
+|--> Speed/Score Tradeoff |10|

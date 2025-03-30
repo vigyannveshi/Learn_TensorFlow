@@ -1,6 +1,6 @@
 ### Content
 
-| <u>**11. Time Series using Tensorflow**</u>  ||
+| <u>**11. Time Series forecasting using Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Data loading and pre-processing|1|

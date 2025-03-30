@@ -180,7 +180,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Making predictions on test-dataset |10| 
 |--> Speed/Score Tradeoff |10|
 
-| <u>**11. Time Series using Tensorflow**</u>  ||
+| <u>**11. Time Series forecasting using Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Data loading and pre-processing|1|

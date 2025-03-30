@@ -3,17 +3,46 @@
 | <u>**11. Time Series using Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|Data loading and pre-processing|1|
-|Alternative to import data using python-csv module |1|
-|Creating train-test splits for time-series data (wrong-way)|1|
-|Creating train-test splits for time-series data (right-way)|1|
-|Creating plotting function to visualize time-series data |1|
-|Modelling Experiments |2|
-|Building Naive model (baseline) |2|
-|Most common time series evaluation metrics |2|
-|Implementing MASE in code |2|
-
-
+|--> Data loading and pre-processing|1|
+|--> Alternative to import data using python-csv module |1|
+|--> Creating train-test splits for time-series data (wrong-way)|1|
+|--> Creating train-test splits for time-series data (right-way)|1|
+|--> Creating plotting function to visualize time-series data |1|
+|--> Modelling Experiments |2|
+|--> Building Naive model (baseline) |2|
+|--> Most common time series evaluation metrics |2|
+|--> Implementing MASE in code |2|
+|--> Creating function to evaluate model's forcast |2|
+|--> Other models for time series forcasting|2|
+|--> Windowing our dataset|3|
+|--> Preprocessing function to window our dataset|3|
+|--> Turning windows into training and test sets|3|
+|--> Creating a modelling checkpoint callback to save our model|4|
+|--> Building Dense model (model 1) (horizon = 1, window = 7)|4|
+|--> Building Model 2 (same as model 1) (horizon = 1, window = 30)|5|
+|--> Building Model 3 (same as model 1) (horizon = 7, window = 30)|6|
+|--> Comparing modelling experiments (baseline,1,2,3)|7|
+|--> Preparing data for input to sequence models |8|
+|--> Building Model 4 (conv1D) (horizon = 1, window = 7)|8|
+|--> Building Model 5 (LSTM) (horizon = 1, window = 7)|9|
+|--> Multivariate time series (Model 6)|10|
+|--> Making a windowed dataset using Pandas|10|
+|--> Replicating N-BEATS algorithm (Model 7)|11|
+|--> --> Building and testing the N-BEATS block layer|11|
+|--> --> Creating a performant data pipeline using `tf.data` |11|
+|--> --> Setting up hyperparameters for N-BEATS (Generic version) with Daily data |11|
+|--> --> Setting up residual connections in N-BEATS |11|
+|--> --> Building, Compiling and fitting the N-Beats algorithm |11|
+|--> --> Saving and loading N-BEATS model |11|
+|--> --> Plotting the N-BEATS architecture  |11|
+|--> Creating an ensemble (Model 8) |12|
+|--> Saving and loading trained ensemble model |12|
+|--> Importance of prediction intervals (uncertainity estimates) in forcasting |12|
+|--> Types of uncertainity in machine learning |13|
+|--> Future Prediction Model (Model 9)|13|
+|--> Black Swan Theory - The turkey problem (Model 10) (same as model 1) (horizon = 1, window = 7) |14|
+|--> Comparing the models trained so far |15|
+ 
 
 ### Notes (Introduction)
 * data has time component (temporal)

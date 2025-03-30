@@ -10,7 +10,6 @@
 # walkthrough_directories()
 # compare_histories()
 # calculate_results()
-# plot_time_series()
 ### ------- FUNCTIONS -------###
 
 ### imports needed
@@ -370,28 +369,6 @@ def calculate_results(y_true,y_pred):
 
 
 
-### plot_time_series
-def plot_time_series(timesteps,values,format='.',start=0,end=None,label=None,xlabel='Time',ylabel='Value',grid=True,legend_text_size=10,label_text_size=10,xtick_rotation=0):
-    '''
-    Plots timesteps (a series of points in time) against values (a series of values across timesteps).
-    
-    Parameters 
-    ----------  
-    timesteps : array of timestep values 
-    values: array of values across time
-    format: style of plot, default "."
-    start: where to start the plot (setting a value will index from start of timesteps & values), default: 0
-    end: where to end the plot (setting a value will end at particular index of timesteps & values), default: None
-    label: label to show on plot about values, default: None
-    xlabel: sets the x-label, default "Time"
-    ylabel: sets the y-label, default "Values" 
-    '''
 
-    # plot the series:
-    plt.plot(timesteps[start:end],values[start:end],format,label=label)
-    plt.xlabel(xlabel,fontsize=label_text_size)
-    plt.ylabel(ylabel,fontsize=label_text_size)
-    plt.xticks(rotation=xtick_rotation)
-    if label:
-        plt.legend(fontsize=legend_text_size)
-    plt.grid(grid)
+
+

@@ -18,7 +18,7 @@
 |--> Model 4: [Bidirectional LSTM (RNN)] |5|
 |--> Intuition behind 1D CNN |6|
 |--> Model 5: [1D CNNs] |6|
-|--> Model 6: Tensorflow hub pre-trained feature extractor |7|
+|--> Model 6: Tensorflow hub pre-trained feature extractor [USE (Universal Sentence Encoder)] |7|
 |--> Model 7: Tensorflow hub pre-trained feature extractor (10% of data) |8|
 |--> Compare all the modelling experiments |9|
 |--> Finding and Visualizing best-model's most wrong predictions |10| 

@@ -19,7 +19,7 @@ The creators of the course have worked very hard in their content, and please re
 
 ### Contents:
 
-| <u>[**01. Tensorflow Fundamentals**](01_tensorflow_fundementals)</u>  ||
+| <u>[**01. Tensorflow Fundamentals**](01_tensorflow_fundementals/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 | --> Creating tensors using `tf.constant()` | 1 |
@@ -48,7 +48,7 @@ The creators of the course have worked very hard in their content, and please re
 <br>
 
 
-| <u>[**02. Neural Network Regression with Tensorflow**](02_neural_network_regression/)</u>  ||
+| <u>[**02. Neural Network Regression with Tensorflow**](02_neural_network_regression/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Creating data for regression model| 1 |
@@ -65,7 +65,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Capstone Project 1|main_1, main_2|
 |--> Capstone Project 2|main_1|
 
-| <u>[**03. Customizing Models**](03_customizing_models/)</u>  ||
+| <u>[**03. Customizing Models**](03_customizing_models/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Custom training loop |1|
@@ -74,7 +74,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Improving Custom model |4|
 
 
-| <u>[**04. Neural Network Classification with Tensorflow**](04_neural_network_classification/)</u>  ||
+| <u>[**04. Neural Network Classification with Tensorflow**](04_neural_network_classification/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Steps in modelling classification model with tensorflow |1|
@@ -88,7 +88,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Understanding patterns learnt by our model|7|
 
 
-| <u>[**05. Convolutional Neural Network & Computer Vision with Tensorflow**](05_convolutional_neural_network/)</u>  ||
+| <u>[**05. Convolutional Neural Network & Computer Vision with Tensorflow**](05_convolutional_neural_network/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Building the first CNN (baseline model)|1|
@@ -101,7 +101,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Making a prediction with our trained model on custom data (multi-class) |7|
 |--> Saving and loading our multi-class model |7|
 
-| <u>[**06. Transfer learning - feature extraction**](06_transfer_learning_feature_extraction/)</u>  ||
+| <u>[**06. Transfer learning - feature extraction**](06_transfer_learning_feature_extraction/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Setting up callbacks |1|
@@ -110,7 +110,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Resnet-50 v2 vs Efficient net b0 |1|
 |--> Visualization using TensorBoard |1|
 
-| <u>[**07. Transfer learning - fine tuning**](07_transfer_learning_fine_tuning/)</u>  ||
+| <u>[**07. Transfer learning - fine tuning**](07_transfer_learning_fine_tuning/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Using `tf.keras.preprocessing.image_dataset_from_directory()` |1|
@@ -138,7 +138,7 @@ The creators of the course have worked very hard in their content, and please re
 |-->Prediction on custom images|1|
 
 
-| <u>[**09. Capstone - Project: Food Vision**](09_milestone_project_food_vision/)</u>  ||
+| <u>[**09. Capstone - Project: Food Vision**](09_milestone_project_food_vision/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Using Tensorflow datasets to download and explore data |1|
@@ -155,7 +155,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Evaluating model and comparing with DeepFood |1|
 
 
-| <u>[**10. Natural Language Processing using Tensorflow**](10_NLP_using_tensorflow/)</u>  ||
+| <u>[**10. Natural Language Processing using Tensorflow**](10_NLP_using_tensorflow/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |01. Introduction to NLP fundementals |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
@@ -180,7 +180,7 @@ The creators of the course have worked very hard in their content, and please re
 |20. Making predictions on test-dataset |[10](10_NLP_using_tensorflow/10_nlp_using_tensorflow.ipynb)| 
 |21. Speed/Score Tradeoff |[10](10_NLP_using_tensorflow/10_nlp_using_tensorflow.ipynb)|
 
-| <u>[**11. Capstone - Project: SkimLit**](11_milestone_project_SkimLit/)</u>  ||
+| <u>[**11. Capstone - Project: SkimLit**](11_milestone_project_SkimLit/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook/Scripts** |
 |01. Data loading and pre-processing |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|

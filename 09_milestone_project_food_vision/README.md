@@ -21,6 +21,7 @@
 |##. Creating an GUI interface of Food-Vision to upload a food picture and get its name |[main.py](main.py)|
 
 ### Running Food Vision
-* Open a terminal in []() folder and run: `python3 main.py`
+* Unzip [`models.zip`](09_milestone_project_food_vision/models.zip)
+* Open a terminal in `09_milestone_project_food_vision` folder and run: `python3 main.py`
 * A GUI will open up where you can add images from your local system or paste a image-address from the web.
 * You will be notified with the food name.

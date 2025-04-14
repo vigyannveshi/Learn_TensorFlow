@@ -30,7 +30,8 @@
 |##. Python program to skim-through PUBMED-RCT abstracts|[main.py](main.py)|
 
 ### Running SkimLit
-* open a terminal in [11_milestone_project_SkimLit](11_milestone_project_SkimLit) folder and run `python3 main.py` 
+* Unzip [`models.zip`](11_milestone_project_SkimLit/models.zip)
+* open a terminal in `11_milestone_project_SkimLit` folder and run `python3 main.py` 
 * A GUI will start up where in you can select a text file or paste the abstract.
 * Once you add in the data, click on `Skim through Abstract` button to get the skimmed output.
 * You can clear the paste area and result area by pressing the `Clear All` button.

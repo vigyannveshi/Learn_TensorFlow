@@ -1,17 +1,19 @@
+### ↩️ [**Learn Tensorflow**](../README.md)
+
 ### Content
 
 | <u>**5. Convolutional Neural Network & Computer Vision with Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Building the first CNN (baseline model)|1|
-|--> Overcoming overfitting |2|
-|--> Data augmentation |2|
-|--> Making a prediction with our trained model on custom data |2|
-|--> Multiclass image classification |3|
-|--> Visualizing each layer and activation output |3|
-|--> Adjust model hyperparams to reduce overfitting / beat the baseline model |4,5,6,7|
-|--> Making a prediction with our trained model on custom data (multi-class) |7|
-|--> Saving and loading our multi-class model |7|
+|01. Building the first CNN (baseline model)|[01](01_cnn_cv_tensorflow.ipynb)|
+|02. Overcoming overfitting |[02](02_cnn_cv_tensorflow.ipynb)|
+|03. Data augmentation |[02](02_cnn_cv_tensorflow.ipynb)|
+|04. Making a prediction with our trained model on custom data |[02](02_cnn_cv_tensorflow.ipynb)|
+|05. Multiclass image classification |[03](03_cnn_cv_tensorflow.ipynb)|
+|06. Visualizing each layer and activation output |[03](03_cnn_cv_tensorflow.ipynb)|
+|07. Adjust model hyperparams to reduce overfitting / beat the baseline model |[04](04_cnn_cv_tensorflow.ipynb),[05](05_cnn_cv_tensorflow.ipynb),[06](06_cnn_cv_tensorflow.ipynb),[07](07_cnn_cv_tensorflow.ipynb)|
+|08. Making a prediction with our trained model on custom data (multi-class) |[07](07_cnn_cv_tensorflow.ipynb)|
+|09. Saving and loading our multi-class model |[07](07_cnn_cv_tensorflow.ipynb)|
 
 
 

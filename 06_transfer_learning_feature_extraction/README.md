@@ -1,15 +1,15 @@
+### ↩️ [**Learn Tensorflow**](../README.md)
+
 ### Content
 
 | <u>**6. Transfer learning - feature extraction**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Setting up callbacks |1|
-|--> Creating models using Tensorflow Hub |1|
-|--> Building and Compiling Tensorflow feature extraction model |1|
-|--> Resnet-50 v2 vs Efficient net b0 |1|
-|--> Visualization using TensorBoard |1|
-
-
+|01. Setting up callbacks |[01](01_transfer_learning_feature_extraction.ipynb)|
+|02. Creating models using Tensorflow Hub |[01](01_transfer_learning_feature_extraction.ipynb)|
+|03. Building and Compiling Tensorflow feature extraction model |[01](01_transfer_learning_feature_extraction.ipynb)|
+|04. Resnet-50 v2 vs Efficient net b0 |[01](01_transfer_learning_feature_extraction.ipynb)|
+|05. Visualization using TensorBoard |[01](01_transfer_learning_feature_extraction.ipynb)|
 
 
 ### Notes:

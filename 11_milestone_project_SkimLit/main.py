@@ -14,6 +14,9 @@ import argparse
 import os
 path = os.getcwd()
 
+# GUI
+import tkinter as tk
+from tkinter import filedialog, messagebox, scrolledtext
 
 
 @kr.saving.register_keras_serializable(package="my_custom_package")
@@ -29,6 +32,11 @@ class UniversalEncodedLayer(tf.keras.layers.Layer):
 
     def call(self,inputs):
         return self.use_layer(inputs)
+
+class AbstractNotFoundError(Exception):
+    def __init__(self, message="Abstract not found or invalid lines provided."):
+        self.message = message
+        super().__init__(self.message)
 
 class SkimLit:
     global path
@@ -70,8 +78,12 @@ class SkimLit:
         pred_labels = tf.argmax(predictions,axis=1)
         return pred_labels
 
-    def skim_abstract(self,filename):
-        lines = self.get_abstract_lines(filename)
+    def skim_abstract(self,filename = None,lines = None):
+        if filename:
+            lines = self.get_abstract_lines(filename)
+        if not lines:
+            raise AbstractNotFoundError()
+
         test_sentences,test_chars,test_line_numbers,test_total_lines = self.preprocess(lines)
         labels = self.classify((test_sentences,test_chars,test_line_numbers,test_total_lines))
 
@@ -86,17 +98,107 @@ class SkimLit:
         output += f"METHODS: {output_dict['METHODS']}\n\n" if output_dict['METHODS'] else ""
         output += f"RESULTS: {output_dict['RESULTS']}\n\n" if output_dict['RESULTS'] else ""
         output += f"CONCLUSIONS: {output_dict['CONCLUSIONS']}\n\n" if output_dict['CONCLUSIONS'] else ""
-        
-        print(output)
 
         with open(f'{path}/output.txt','w') as file:
             file.write(output)
 
+
+# GUI Application
+class SkimLitApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("SkimLit - PUBMED-RCT Abstract Classifier")
+        self.root.geometry("1000x1000")
+        
+        self.skimlit = SkimLit()
+        self.data = None
+        self.filename = None
+        
+        self.label = tk.Label(root, text="Select Abstract File", font=('Arial', 14))
+        self.label.pack(pady=10)
+        
+        self.browse_button = tk.Button(root, text="Browse", command=self.browse_file, font=('Arial', 12))
+        self.browse_button.pack(pady=5)
+        
+        ### PASTING ABSTRACT FUNCTIONALITY
+        # Label for 'OR'
+        self.or_label = tk.Label(root, text="OR", font=('Arial', 12))
+        self.or_label.pack(pady=5)
+
+        # Label for paste instructions
+        self.paste_label = tk.Label(root, text="Paste Abstract Below:", font=('Arial', 14))
+        self.paste_label.pack(pady=5)
+
+        # Text area for pasting abstract
+        self.text_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=80, height=10, font=('Arial', 12))
+        self.text_area.pack(pady=5)
+
+        self.process_button = tk.Button(root, text="Skim through Abstract", command=self.process_abstract, font=('Arial', 12))
+        self.process_button.pack(pady=10)
+
+        self.clear_button = tk.Button(root, text="Clear All", command=self.clear_contents, font=('Arial', 12))
+        self.clear_button.pack(pady=10)
+
+        self.result_label = tk.Label(root, text="Classified Abstract Output:", font=('Arial', 14))
+        self.result_label.pack(pady=5)
+
+        self.result_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=80, height=10, font=('Arial', 12))
+        self.result_area.pack(pady=5)
+
+    def clear_contents(self):
+        self.filename = None
+        self.data = None
+        self.result_area.delete('1.0', tk.END)
+        self.text_area.delete('1.0', tk.END)
+
+
+    def browse_file(self):
+        self.filename = filedialog.askopenfilename(title="Select Abstract File", filetypes=(("Text files", "*.txt"), ("All files", "*.*")))
+        if self.filename:
+            messagebox.showinfo("Selected File", f"File Selected: {self.filename}")
+            with open(self.filename, 'r') as file:
+                self.data = file.read()
+                self.text_area.delete('1.0', tk.END)
+                self.text_area.insert(tk.END, self.data)
+
+    def process_abstract(self):
+        # Prefer pasted data if any; else use selected file
+        pasted_text = self.text_area.get('1.0', tk.END).strip()
+        
+        if pasted_text:
+            lines = re.split(r'(?<=[.])\s+(?=[A-Z])', pasted_text)
+            try:
+                self.skimlit.skim_abstract(lines=lines)
+                with open(f'{path}/output.txt', 'r') as file:
+                    output_data = file.read()
+                self.result_area.delete('1.0', tk.END)
+                self.result_area.insert(tk.END, output_data)
+            except AbstractNotFoundError as e:
+                messagebox.showerror("Error", str(e))
+        elif self.filename:
+            try:
+                self.skimlit.skim_abstract(filename=self.filename)
+                with open(f'{path}/output.txt', 'r') as file:
+                    output_data = file.read()
+                self.result_area.delete('1.0', tk.END)
+                self.result_area.insert(tk.END, output_data)
+            except AbstractNotFoundError as e:
+                messagebox.showerror("Error", str(e))
+        else:
+            messagebox.showwarning("Warning", "No abstract provided. Please upload a file or paste an abstract.")
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="SkimLit: Classify PUBMED-RCT abstracts into sections")
-    parser.add_argument('--filename', type=str, required=True, help='Path to the abstract file')
+    root = tk.Tk()
+    app = SkimLitApp(root)
+    root.mainloop()
 
-    args = parser.parse_args()
+# if __name__ == "__main__":
+#     parser = argparse.ArgumentParser(description="SkimLit: Classify PUBMED-RCT abstracts into sections")
+#     parser.add_argument('--filename', type=str, required=True, help='Path to the abstract file')
 
-    sk = SkimLit()
-    sk.skim_abstract(os.path.join(path, args.filename))
+#     args = parser.parse_args()
+
+#     sk = SkimLit()
+#     sk.skim_abstract(os.path.join(path, args.filename))
+
+

@@ -22,138 +22,159 @@ The creators of the course have worked very hard in their content, and please re
 | <u>[**01. Tensorflow Fundamentals**](01_tensorflow_fundementals/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-| --> Creating tensors using `tf.constant()` | 1 |
-| --> Creating tensors using `tf.Variable()` | 1 |
-| --> Creating random tensors using `tf.random.distribution()` | 1 |
-| --> Shuffle the order of elements of tensor using `tf.random.shuffle()` | 2 |
-| --> Other ways to create tensors | 3 |
-| --> Getting information from tensors | 4 |
-| --> Indexing and expanding tensors | 5 |
-| --> Reshaping the tensor using `tf.reshape()` | 5 |
-| --> Adding an extra dimension to tensor using `tf.newaxis` or `tf.expand_dims()` | 5 |
-| --> Manipulating tensors with basic operations (+,-,*,/) | 6 |
-| --> Matrix Multiplication | 7 |
-| --> Dot Product | 7 |
-| --> Changing datatype of tensors using `tf.cast()` | 8 |
-| --> Aggregating tensors | 9 |
-| --> Finding positional maximum and minimum | 10 |
-| --> Squeezing a tensor `tf.squeeze()` | 11 |
-| --> One Hot Encoding `tf.one_hot(indices:tensor,depth:"number of classes")` | 12 |
-| --> Some more tensor functions and operations | 13 |
-| --> Tensors and Numpy | 14 |
-| --> Understanding Devices to speed up TensorFlow | 15 |
-| --> Exercise | 16 |
+| 01. Creating tensors using `tf.constant()` |[01](01_tensorflow_fundementals/01_tensorflow_fundementals.ipynb)|
+| 02. Creating tensors using `tf.Variable()` |[01](01_tensorflow_fundementals/01_tensorflow_fundementals.ipynb)|
+| 03. Creating random tensors using `tf.random.distribution()` |[01](01_tensorflow_fundementals/01_tensorflow_fundementals.ipynb)|
+| 04. Shuffle the order of elements of tensor using `tf.random.shuffle()` |[02](01_tensorflow_fundementals/02_tensorflow_fundementals.ipynb)|
+| 05. Other ways to create tensors |[03](01_tensorflow_fundementals/03_tensorflow_fundementals.ipynb)|
+| 06. Getting information from tensors |[04](01_tensorflow_fundementals/04_tensorflow_fundementals.ipynb)|
+| 07. Indexing and expanding tensors |[05](01_tensorflow_fundementals/05_tensorflow_fundementals.ipynb)|
+| 08. Reshaping the tensor using `tf.reshape()` |[05](01_tensorflow_fundementals/05_tensorflow_fundementals.ipynb)|
+| 09. Adding an extra dimension to tensor using `tf.newaxis` or `tf.expand_dims()` |[05](01_tensorflow_fundementals/05_tensorflow_fundementals.ipynb)|
+| 10. Manipulating tensors with basic operations (+,-,*,/) |[06](01_tensorflow_fundementals/06_tensorflow_fundementals.ipynb)|
+| 11. Matrix Multiplication |[07](01_tensorflow_fundementals/07_tensorflow_fundementals.ipynb)|
+| 12. Dot Product |[07](01_tensorflow_fundementals/07_tensorflow_fundementals.ipynb)|
+| 13. Changing datatype of tensors using `tf.cast()` |[08](01_tensorflow_fundementals/08_tensorflow_fundementals.ipynb)|
+| 14. Aggregating tensors |[09](01_tensorflow_fundementals/09_tensorflow_fundementals.ipynb)|
+| 15. Finding positional maximum and minimum |[10](01_tensorflow_fundementals/10_tensorflow_fundementals.ipynb)|
+| 16. Squeezing a tensor `tf.squeeze()` |[11](01_tensorflow_fundementals/11_tensorflow_fundementals.ipynb)|
+| 17. One Hot Encoding `tf.one_hot(indices:tensor,depth:"number of classes")` |[12](01_tensorflow_fundementals/12_tensorflow_fundementals.ipynb)|
+| 18. Some more tensor functions and operations |[13](01_tensorflow_fundementals/13_tensorflow_fundementals.ipynb)|
+| 19. Tensors and Numpy |[14](01_tensorflow_fundementals/14_tensorflow_fundementals.ipynb)|
+| 20. Understanding Devices to speed up TensorFlow |[15](01_tensorflow_fundementals/15_tensorflow_fundementals.ipynb)|
+| ##. Exercise |[16](01_tensorflow_fundementals/16_tensorflow_fundementals.ipynb)|
 
 <br>
 <br>
-
 
 | <u>[**02. Neural Network Regression with Tensorflow**](02_neural_network_regression/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Creating data for regression model| 1 |
-|--> Understanding input and output shapes (features and labels) | 1 |
-|--> Major steps in modelling with tensorflow | 2 |
-|--> Improving the model | 3 |
-|--> Evaluating the model | 4 | 
-|--> Train-Validate-Test split | 4 | 
-|--> Visualizing the data | 4 | 
-|--> Visualizing the model | 4 |  
-|--> Visualizing model predictions | 5 |  
-|--> Evaluating model's prediction in regression| 5 |  
-|--> Saving and loading a model | 5 |
-|--> Capstone Project 1|main_1, main_2|
-|--> Capstone Project 2|main_1|
+|01. Creating data for regression model|[01](02_neural_network_regression/01_neural_network_regression.ipynb)|
+|02. Understanding input and output shapes (features and labels) |[01](02_neural_network_regression/01_neural_network_regression.ipynb)|
+|03. Major steps in modelling with tensorflow |[02](02_neural_network_regression/02_neural_network_regression.ipynb)|
+|04. Improving the model |[03](02_neural_network_regression/03_neural_network_regression.ipynb)|
+|05. Evaluating the model |[04](02_neural_network_regression/04_neural_network_regression.ipynb)| 
+|06. Train-Validate-Test split |[04](02_neural_network_regression/04_neural_network_regression.ipynb)| 
+|07. Visualizing the data |[04](02_neural_network_regression/04_neural_network_regression.ipynb)| 
+|08. Visualizing the model |[04](02_neural_network_regression/04_neural_network_regression.ipynb)|  
+|09. Visualizing model predictions |[05](02_neural_network_regression/05_neural_network_regression.ipynb)|  
+|10. Evaluating model's prediction in regression|[05](02_neural_network_regression/05_neural_network_regression.ipynb)|  
+|11. Saving and loading a model |[05](02_neural_network_regression/05_neural_network_regression.ipynb)|
+|##. Capstone Project 1|[cp1 - main_1](02_neural_network_regression/capstone_project_1/main_1.ipynb), [cp1 - main_2](02_neural_network_regression/capstone_project_1/main_2.ipynb)|
+|##. Capstone Project 2|[cp2 - main_1](02_neural_network_regression/capstone_project_2/main_1.ipynb)|
+
+<br>
+<br>
 
 | <u>[**03. Customizing Models**](03_customizing_models/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Custom training loop |1|
-|--> Custom loss function |2|
-|--> Custom model         |3|
-|--> Improving Custom model |4|
+|01. Custom training loop |[01](03_customizing_models/01_custom_training_loop.ipynb)|
+|02. Custom loss function |[02](03_customizing_models/02_custom_loss_function.ipynb)|
+|03. Custom model         |[03](03_customizing_models/03_custom_model.ipynb)|
+|04. Improving Custom model|[04](03_customizing_models/04_improving_custom_model_further.ipynb)|
 
+<br>
+<br>
 
 | <u>[**04. Neural Network Classification with Tensorflow**](04_neural_network_classification/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Steps in modelling classification model with tensorflow |1|
-|--> Using history of `model.fit()` |1|
-|--> Finding the best learning rate |2|
-|--> Classification Evaluation Methods |3|
-|--> Multiclass classification         |4|
-|--> Improving Predictions on Fashion MNIST using normalized data |5|
-|--> Finding ideal learning rate for Fashion MNIST |6|
-|--> Evaluating trained model on Fashion MNIST |6|
-|--> Understanding patterns learnt by our model|7|
+|01. Steps in modelling classification model with tensorflow |[01](04_neural_network_classification/01_neural_network_classifier.ipynb)|
+|02. Using history of `model.fit()` |[01](04_neural_network_classification/01_neural_network_classifier.ipynb)|
+|03. Finding the best learning rate |[02](04_neural_network_classification/02_neural_network_classifier.ipynb)|
+|04. Classification Evaluation Methods |[03](04_neural_network_classification/03_neural_network_classifier.ipynb)|
+|05. Multiclass classification         |[04](04_neural_network_classification/04_neural_network_classifier.ipynb)|
+|06. Improving Predictions on Fashion MNIST using normalized data |[05](04_neural_network_classification/05_neural_network_classifier.ipynb)|
+|07. Finding ideal learning rate for Fashion MNIST |[06](04_neural_network_classification/06_neural_network_classifier.ipynb)|
+|08. Evaluating trained model on Fashion MNIST |[06](04_neural_network_classification/06_neural_network_classifier.ipynb)|
+|09. Understanding patterns learnt by our model|[07](04_neural_network_classification/07_neural_network_classifier.ipynb)|
 
+<br>
+<br>
 
 | <u>[**05. Convolutional Neural Network & Computer Vision with Tensorflow**](05_convolutional_neural_network/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Building the first CNN (baseline model)|1|
-|--> Overcoming overfitting |2|
-|--> Data augmentation |2|
-|--> Making a prediction with our trained model on custom data |2|
-|--> Multiclass image classification |3|
-|--> Visualizing each layer and activation output |3|
-|--> Adjust model hyperparams to reduce overfitting / beat the baseline model |4,5,6,7|
-|--> Making a prediction with our trained model on custom data (multi-class) |7|
-|--> Saving and loading our multi-class model |7|
+|01. Building the first CNN (baseline model)|[01](05_convolutional_neural_network/01_cnn_cv_tensorflow.ipynb)|
+|02. Overcoming overfitting |[02](05_convolutional_neural_network/02_cnn_cv_tensorflow.ipynb)|
+|03. Data augmentation |[02](05_convolutional_neural_network/02_cnn_cv_tensorflow.ipynb)|
+|04. Making a prediction with our trained model on custom data |[02](05_convolutional_neural_network/02_cnn_cv_tensorflow.ipynb)|
+|05. Multiclass image classification |[03](05_convolutional_neural_network/03_cnn_cv_tensorflow.ipynb)|
+|06. Visualizing each layer and activation output |[03](05_convolutional_neural_network/03_cnn_cv_tensorflow.ipynb)|
+|07. Adjust model hyperparams to reduce overfitting / beat the baseline model |[04](05_convolutional_neural_network/04_cnn_cv_tensorflow.ipynb),[05](05_convolutional_neural_network/05_cnn_cv_tensorflow.ipynb),[06](05_convolutional_neural_network/06_cnn_cv_tensorflow.ipynb),[07](05_convolutional_neural_network/07_cnn_cv_tensorflow.ipynb)|
+|08. Making a prediction with our trained model on custom data (multi-class) |[07](05_convolutional_neural_network/07_cnn_cv_tensorflow.ipynb)|
+|09. Saving and loading our multi-class model |[07](05_convolutional_neural_network/07_cnn_cv_tensorflow.ipynb)|
+
+<br>
+<br>
 
 | <u>[**06. Transfer learning - feature extraction**](06_transfer_learning_feature_extraction/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Setting up callbacks |1|
-|--> Creating models using Tensorflow Hub |1|
-|--> Building and Compiling Tensorflow feature extraction model |1|
-|--> Resnet-50 v2 vs Efficient net b0 |1|
-|--> Visualization using TensorBoard |1|
+|01. Setting up callbacks |[01](06_transfer_learning_feature_extraction/01_transfer_learning_feature_extraction.ipynb)|
+|02. Creating models using Tensorflow Hub |[01](06_transfer_learning_feature_extraction/01_transfer_learning_feature_extraction.ipynb)|
+|03. Building and Compiling Tensorflow feature extraction model |[01](06_transfer_learning_feature_extraction/01_transfer_learning_feature_extraction.ipynb)|
+|04. Resnet-50 v2 vs Efficient net b0 |[01](06_transfer_learning_feature_extraction/01_transfer_learning_feature_extraction.ipynb)|
+|05. Visualization using TensorBoard |[01](06_transfer_learning_feature_extraction/01_transfer_learning_feature_extraction.ipynb)|
+
+<br>
+<br>
 
 | <u>[**07. Transfer learning - fine tuning**](07_transfer_learning_fine_tuning/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Using `tf.keras.preprocessing.image_dataset_from_directory()` |1|
-|--> Performing Various Experimentations |1|
-|--> --> Building a baseline model for running experiments |1|
-|--> --> --> Building model using `Functional()` API |1|
-|--> --> Getting feature vector from trained model |2|
-|--> --> Running a model experiment using 1% of training data|3|
-|--> --> Running a model experiment using 10% of augmented training data|4|
-|--> --> --> Creating a model checkpoint callback|4|
-|--> --> --> Loading in model/model weights using saved checkpoints|4|
-|--> --> Improving the baseline model, by fine tuning weights of base model |5|
-|--> --> --> Loading the checkpoints of model 2 |5|
-|--> --> --> Fine tuning for another 5 epochs |5|
-|--> --> --> Comparing before and after fine-tuning |5|
-|--> --> Running a model experiment using 100% of augmented training data with fine tuning|6|
+|01. Using `tf.keras.preprocessing.image_dataset_from_directory()` |[01](07_transfer_learning_fine_tuning/01_transfer_learning_fine_tuning.ipynb)|
+|02. Performing Various Experimentations |[01](07_transfer_learning_fine_tuning/01_transfer_learning_fine_tuning.ipynb)|
+|02.1. Building a baseline model for running experiments |[01](07_transfer_learning_fine_tuning/01_transfer_learning_fine_tuning.ipynb)|
+|02.1.1 Building model using `Functional()` API |[01](07_transfer_learning_fine_tuning/01_transfer_learning_fine_tuning.ipynb)|
+|02.2. Getting feature vector from trained model |[02](07_transfer_learning_fine_tuning/02_transfer_learning_fine_tuning.ipynb)|
+|02.3. Running a model experiment using 1% of training data|[03](07_transfer_learning_fine_tuning/03_transfer_learning_fine_tuning.ipynb)|
+|02.4. Running a model experiment using 10% of augmented training data|[04](07_transfer_learning_fine_tuning/04_transfer_learning_fine_tuning.ipynb)|
+|02.4.1. Creating a model checkpoint callback|[04](07_transfer_learning_fine_tuning/04_transfer_learning_fine_tuning.ipynb)|
+|02.4.2. Loading in model/model weights using saved checkpoints|[04](07_transfer_learning_fine_tuning/04_transfer_learning_fine_tuning.ipynb)|
+|02.5. Improving the baseline model, by fine tuning weights of base model |[05](07_transfer_learning_fine_tuning/05_transfer_learning_fine_tuning.ipynb)|
+|02.5.1. Loading the checkpoints of model 2 |[05](07_transfer_learning_fine_tuning/05_transfer_learning_fine_tuning.ipynb)|
+|02.5.2. Fine tuning for another 5 epochs |[05](07_transfer_learning_fine_tuning/05_transfer_learning_fine_tuning.ipynb)|
+|02.5.3. Comparing before and after fine-tuning |[05](07_transfer_learning_fine_tuning/05_transfer_learning_fine_tuning.ipynb)|
+|02.6. Running a model experiment using 100% of augmented training data with fine tuning|[06](07_transfer_learning_fine_tuning/06_transfer_learning_fine_tuning.ipynb)|
+
+<br>
+<br>
 
 | <u>[**08. Transfer learning - scaling up**](08_transfer_learning_scaling_up/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|-->Training a model to fit data of 101 classes of Food101 dataset|1|
-|-->Evaluating the fitted model|1|
-|-->Visualizing f1-scores for different classes|1|
-|-->Checking out where our model is most wrong|1|
-|-->Prediction on custom images|1|
+|01. Training a model to fit data of 101 classes of Food101 dataset|[01](08_transfer_learning_scaling_up/1_transfer_learning_scaling_up.ipynb)|
+|02. Evaluating the fitted model|[01](08_transfer_learning_scaling_up/1_transfer_learning_scaling_up.ipynb)|
+|03. Visualizing f1-scores for different classes|[01](08_transfer_learning_scaling_up/1_transfer_learning_scaling_up.ipynb)|
+|04. Checking out where our model is most wrong|[01](08_transfer_learning_scaling_up/1_transfer_learning_scaling_up.ipynb)|
+|05. Prediction on custom images|[01](08_transfer_learning_scaling_up/1_transfer_learning_scaling_up.ipynb)|
 
+<br>
+<br>
 
 | <u>[**09. Capstone - Project: Food Vision**](09_milestone_project_food_vision/README.md)</u>  ||
 |---------|----------|
-| **Concept** | **Notebook** |
-|--> Using Tensorflow datasets to download and explore data |1|
-|--> --> Becoming one with data |1|
-|--> Creating a pre-processing function for our data |1|
-|--> Batching and preparing datasets for modelling |1|
-|--> Setting up callbacks and mixed-precision training (faster model training) |1|
-|--> Building the feature extraction model |1|
-|--> loading and evaluating model using checkpoint weights |1|
-|--> Creating function to get top-k accuracy using test dataset |1|
-|--> Preparing model layers for fine-tuning |1|
-|--> `EarlyStopping` callback and `ReduceLRonPlateau()` callback setup |1|
-|--> Fine-tuning feature extraction model to beat Deep Food paper |1|
-|--> Evaluating model and comparing with DeepFood |1|
+| **Concept** | **Notebook/Script** |
+|01. Using Tensorflow datasets to download and explore data |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|01.1 Becoming one with data |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|02. Creating a pre-processing function for our data |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|03. Batching and preparing datasets for modelling |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|04. Setting up callbacks and mixed-precision training (faster model training) |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|05. Building the feature extraction model |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|06. loading and evaluating model using checkpoint weights |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|07. Creating function to get top-k accuracy using test dataset |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|08. Preparing model layers for fine-tuning |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|09. `EarlyStopping` callback and `ReduceLRonPlateau()` callback setup |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|10. Fine-tuning feature extraction model to beat Deep Food paper |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|11. Evaluating model and comparing with DeepFood |[01](09_milestone_project_food_vision/01_food_vision_capstone_project.ipynb)|
+|12. Creating an end to end pipeline to input a food image and get its name |[02](09_milestone_project_food_vision/02_food_vision_capstone_project.ipynb)|
+|##. Creating an GUI interface of Food-Vision to upload a food picture and get its name |[main.py](09_milestone_project_food_vision/main.py)|
 
+<br>
+<br>
 
 | <u>[**10. Natural Language Processing using Tensorflow**](10_NLP_using_tensorflow/README.md)</u>  ||
 |---------|----------|
@@ -180,9 +201,12 @@ The creators of the course have worked very hard in their content, and please re
 |20. Making predictions on test-dataset |[10](10_NLP_using_tensorflow/10_nlp_using_tensorflow.ipynb)| 
 |21. Speed/Score Tradeoff |[10](10_NLP_using_tensorflow/10_nlp_using_tensorflow.ipynb)|
 
+<br>
+<br>
+
 | <u>[**11. Capstone - Project: SkimLit**](11_milestone_project_SkimLit/README.md)</u>  ||
 |---------|----------|
-| **Concept** | **Notebook/Scripts** |
+| **Concept** | **Notebook/Script** |
 |01. Data loading and pre-processing |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
 |01.1. How we want our data to look |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
 |01.2. Getting list of sentences |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
@@ -207,6 +231,8 @@ The creators of the course have worked very hard in their content, and please re
 |19. Creating an end to end pipeline to input abstract and get output classified text|[07](11_milestone_project_SkimLit/07_skimlit.ipynb)|
 |##. Python program to skim-through PUBMED-RCT abstracts|[main.py](11_milestone_project_SkimLit/main.py)|
 
+<br>
+<br>
 
 | <u>[**12. Time Series forecasting using Tensorflow**](12_time_series_using_tensorflow/README.md)</u>  ||
 |---------|----------|

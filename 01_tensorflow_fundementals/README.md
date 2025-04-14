@@ -1,29 +1,31 @@
+### ↩️ [**Learn Tensorflow**](../README.md)
+
 ### Content
 
 | <u>**1. Tensorflow Fundamentals**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-| --> Creating tensors using `tf.constant()` | 1 |
-| --> Creating tensors using `tf.Variable()` | 1 |
-| --> Creating random tensors using `tf.random.distribution()` | 1 |
-| --> Shuffle the order of elements of tensor using `tf.random.shuffle()` | 2 |
-| --> Other ways to create tensors | 3 |
-| --> Getting information from tensors | 4 |
-| --> Indexing and expanding tensors | 5 |
-| --> Reshaping the tensor using `tf.reshape()` | 5 |
-| --> Adding an extra dimension to tensor using `tf.newaxis` or `tf.expand_dims()` | 5 |
-| --> Manipulating tensors with basic operations (+,-,*,/) | 6 |
-| --> Matrix Multiplication | 7 |
-| --> Dot Product | 7 |
-| --> Changing datatype of tensors using `tf.cast()` | 8 |
-| --> Aggregating tensors | 9 |
-| --> Finding positional maximum and minimum | 10 |
-| --> Squeezing a tensor `tf.squeeze()` | 11 |
-| --> One Hot Encoding `tf.one_hot(indices:tensor,depth:"number of classes")` | 12 |
-| --> Some more tensor functions and operations | 13 |
-| --> Tensors and Numpy | 14 |
-| --> Understanding Devices to speed up TensorFlow | 15 |
-| --> Exercise | 16 |
+| 01. Creating tensors using `tf.constant()` |[01](01_tensorflow_fundementals.ipynb)|
+| 02. Creating tensors using `tf.Variable()` |[01](01_tensorflow_fundementals.ipynb)|
+| 03. Creating random tensors using `tf.random.distribution()` |[01](01_tensorflow_fundementals.ipynb)|
+| 04. Shuffle the order of elements of tensor using `tf.random.shuffle()` |[02](02_tensorflow_fundementals.ipynb)|
+| 05. Other ways to create tensors |[03](03_tensorflow_fundementals.ipynb)|
+| 06. Getting information from tensors |[04](04_tensorflow_fundementals.ipynb)|
+| 07. Indexing and expanding tensors |[05](05_tensorflow_fundementals.ipynb)|
+| 08. Reshaping the tensor using `tf.reshape()` |[05](05_tensorflow_fundementals.ipynb)|
+| 09. Adding an extra dimension to tensor using `tf.newaxis` or `tf.expand_dims()` |[05](05_tensorflow_fundementals.ipynb)|
+| 10. Manipulating tensors with basic operations (+,-,*,/) |[06](06_tensorflow_fundementals.ipynb)|
+| 11. Matrix Multiplication |[07](07_tensorflow_fundementals.ipynb)|
+| 12. Dot Product |[07](07_tensorflow_fundementals.ipynb)|
+| 13. Changing datatype of tensors using `tf.cast()` |[08](08_tensorflow_fundementals.ipynb)|
+| 14. Aggregating tensors |[09](09_tensorflow_fundementals.ipynb)|
+| 15. Finding positional maximum and minimum |[10](10_tensorflow_fundementals.ipynb)|
+| 16. Squeezing a tensor `tf.squeeze()` |[11](11_tensorflow_fundementals.ipynb)|
+| 17. One Hot Encoding `tf.one_hot(indices:tensor,depth:"number of classes")` |[12](12_tensorflow_fundementals.ipynb)|
+| 18. Some more tensor functions and operations |[13](13_tensorflow_fundementals.ipynb)|
+| 19. Tensors and Numpy |[14](14_tensorflow_fundementals.ipynb)|
+| 20. Understanding Devices to speed up TensorFlow |[15](15_tensorflow_fundementals.ipynb)|
+| ##. Exercise |[16](16_tensorflow_fundementals.ipynb)|
 
 
 

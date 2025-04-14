@@ -17,5 +17,9 @@ important_reference_links.txt
 # checkpoints to be ignored
 **/model_checkpoints.zip
 
+# script to rename multiple files for organization
+**/rename.ipynb
+
 # files not to be ignored
 !**/skimlit.keras
+!**/food_vision.keras

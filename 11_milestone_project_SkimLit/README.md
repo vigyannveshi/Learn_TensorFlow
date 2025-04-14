@@ -1,8 +1,10 @@
+### ↩️ [**Learn Tensorflow**](../README.md)
+
 ### Content
 
 | <u>**11. Capstone - Project: SkimLit**</u>  ||
 |---------|----------|
-| **Concept** | **Notebook/Scripts** |
+| **Concept** | **Notebook/Script** |
 |01. Data loading and pre-processing |[01](01_skimlit.ipynb)|
 |01.1. How we want our data to look |[01](01_skimlit.ipynb)|
 |01.2. Getting list of sentences |[01](01_skimlit.ipynb)|
@@ -27,9 +29,12 @@
 |19. Creating an end to end pipeline to input abstract and get output classified text|[07](07_skimlit.ipynb)|
 |##. Python program to skim-through PUBMED-RCT abstracts|[main.py](main.py)|
 
-### Breaking abstract into sections
-* Run `python3 main.py --filename "yourfile.txt"`
-* Output will be available in `output.txt`
+### Running SkimLit
+* open a terminal in [11_milestone_project_SkimLit](11_milestone_project_SkimLit) folder and run `python3 main.py` 
+* A GUI will start up where in you can select a text file or paste the abstract.
+* Once you add in the data, click on `Skim through Abstract` button to get the skimmed output.
+* You can clear the paste area and result area by pressing the `Clear All` button.
+
 
 ### Notes (Introduction)
 * We are trying to make medical abstracts 📄 easier to read by breaking them down into subsections: [Background 🔙, Objective 🕵️, Methods 🪜, Results 📊, Conclusion 🏁]

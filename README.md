@@ -155,18 +155,18 @@ The creators of the course have worked very hard in their content, and please re
 |--> Evaluating model and comparing with DeepFood |1|
 
 
-| <u>**10. Natural Language Processing using Tensorflow**</u>  ||
+| <u>[**10. Natural Language Processing using Tensorflow**](10_NLP_using_tensorflow)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|1. Introduction to NLP fundementals |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
-|2. Visualizing a text dataset |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
-|3. Splitting data into training and validation set |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
-|4. Converting text to numbers using tokenization and embedding them |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
-|5. Modelling a text-dataset (running series of experiments) |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
-|6. Model 0: creation and evaluation |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
-|7. Creating an evaluation metric function |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
-|8. Model 1: [Feed forward Neural Network (dense model)]: creation and evaluation |[02](10_NLP_using_tensorflow/02_nlp_using_tensorflow.ipynb)|
-|9. Visualizing our model's learned word embeddings |[02](10_NLP_using_tensorflow/02_nlp_using_tensorflow.ipynb)|
+|01. Introduction to NLP fundementals |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
+|02. Visualizing a text dataset |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
+|03. Splitting data into training and validation set |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
+|04. Converting text to numbers using tokenization and embedding them |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
+|05. Modelling a text-dataset (running series of experiments) |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
+|06. Model 0: creation and evaluation |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
+|07. Creating an evaluation metric function |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
+|08. Model 1: [Feed forward Neural Network (dense model)]: creation and evaluation |[02](10_NLP_using_tensorflow/02_nlp_using_tensorflow.ipynb)|
+|09. Visualizing our model's learned word embeddings |[02](10_NLP_using_tensorflow/02_nlp_using_tensorflow.ipynb)|
 |10. Recurrent Neural Networks (RNNs)|[03](10_NLP_using_tensorflow/03_nlp_using_tensorflow.ipynb)|
 |11. Model 2: [LSTM (RNN)] |[03](10_NLP_using_tensorflow/03_nlp_using_tensorflow.ipynb)|
 |12. Model 3: [GRU (RNN)] |[04](10_NLP_using_tensorflow/04_nlp_using_tensorflow.ipynb)|
@@ -179,7 +179,6 @@ The creators of the course have worked very hard in their content, and please re
 |19. Finding and Visualizing best-model's most wrong predictions |[10](10_NLP_using_tensorflow/10_nlp_using_tensorflow.ipynb)| 
 |20. Making predictions on test-dataset |[10](10_NLP_using_tensorflow/10_nlp_using_tensorflow.ipynb)| 
 |21. Speed/Score Tradeoff |[10](10_NLP_using_tensorflow/10_nlp_using_tensorflow.ipynb)|
-
 
 | <u>[**11. Capstone - Project: SkimLit**](11_milestone_project_SkimLit/)</u>  ||
 |---------|----------|

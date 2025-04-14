@@ -19,7 +19,7 @@ The creators of the course have worked very hard in their content, and please re
 
 ### Contents:
 
-| <u>**1. Tensorflow Fundamentals**</u>  ||
+| <u>[**01. Tensorflow Fundamentals**](01_tensorflow_fundementals)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 | --> Creating tensors using `tf.constant()` | 1 |
@@ -48,7 +48,7 @@ The creators of the course have worked very hard in their content, and please re
 <br>
 
 
-| <u>**2. Neural Network Regression with Tensorflow**</u>  ||
+| <u>[**02. Neural Network Regression with Tensorflow**](02_neural_network_regression/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Creating data for regression model| 1 |
@@ -65,7 +65,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Capstone Project 1|main_1, main_2|
 |--> Capstone Project 2|main_1|
 
-| <u>**3. Customizing Models**</u>  ||
+| <u>[**03. Customizing Models**](03_customizing_models/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Custom training loop |1|
@@ -74,7 +74,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Improving Custom model |4|
 
 
-| <u>**4. Neural Network Classification with Tensorflow**</u>  ||
+| <u>[**04. Neural Network Classification with Tensorflow**](04_neural_network_classification/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Steps in modelling classification model with tensorflow |1|
@@ -88,7 +88,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Understanding patterns learnt by our model|7|
 
 
-| <u>**5. Convolutional Neural Network & Computer Vision with Tensorflow**</u>  ||
+| <u>[**05. Convolutional Neural Network & Computer Vision with Tensorflow**](05_convolutional_neural_network/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Building the first CNN (baseline model)|1|
@@ -101,7 +101,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Making a prediction with our trained model on custom data (multi-class) |7|
 |--> Saving and loading our multi-class model |7|
 
-| <u>**6. Transfer learning - feature extraction**</u>  ||
+| <u>[**06. Transfer learning - feature extraction**](06_transfer_learning_feature_extraction/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Setting up callbacks |1|
@@ -110,7 +110,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Resnet-50 v2 vs Efficient net b0 |1|
 |--> Visualization using TensorBoard |1|
 
-| <u>**7. Transfer learning - fine tuning**</u>  ||
+| <u>[**07. Transfer learning - fine tuning**](07_transfer_learning_fine_tuning/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Using `tf.keras.preprocessing.image_dataset_from_directory()` |1|
@@ -128,7 +128,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> --> --> Comparing before and after fine-tuning |5|
 |--> --> Running a model experiment using 100% of augmented training data with fine tuning|6|
 
-| <u>**8. Transfer learning - scaling up**</u>  ||
+| <u>[**08. Transfer learning - scaling up**](08_transfer_learning_scaling_up/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |-->Training a model to fit data of 101 classes of Food101 dataset|1|
@@ -138,7 +138,7 @@ The creators of the course have worked very hard in their content, and please re
 |-->Prediction on custom images|1|
 
 
-| <u>**9. Capstone - Project: Food Vision**</u>  ||
+| <u>[**09. Capstone - Project: Food Vision**](09_milestone_project_food_vision/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |--> Using Tensorflow datasets to download and explore data |1|
@@ -155,7 +155,7 @@ The creators of the course have worked very hard in their content, and please re
 |--> Evaluating model and comparing with DeepFood |1|
 
 
-| <u>[**10. Natural Language Processing using Tensorflow**](10_NLP_using_tensorflow)</u>  ||
+| <u>[**10. Natural Language Processing using Tensorflow**](10_NLP_using_tensorflow/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
 |01. Introduction to NLP fundementals |[01](10_NLP_using_tensorflow/01_nlp_using_tensorflow.ipynb)|
@@ -183,70 +183,70 @@ The creators of the course have worked very hard in their content, and please re
 | <u>[**11. Capstone - Project: SkimLit**](11_milestone_project_SkimLit/)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook/Scripts** |
-|--> Data loading and pre-processing |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
-|--> --> How we want our data to look |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
-|--> --> Getting list of sentences |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
-|--> --> Making numeric labels |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
-|--> Experiments to run |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
-|--> Model 0: Naive Bayes with TF-IDF (baseline)|[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
-|--> Preparing data for deep sequence models |[02](11_milestone_project_SkimLit/02_skimlit.ipynb)|
-|--> Model 1: Conv1D with custom token embeddings|[02](11_milestone_project_SkimLit/02_skimlit.ipynb)|
-|--> Using pretrained embedding layer [USE (Universal Sentence Encoder)] |[03](11_milestone_project_SkimLit/03_skimlit.ipynb)|
-|--> Model 2:  Pretrained token embedding: USE-embedding layer + Dense layer |[03](11_milestone_project_SkimLit/03_skimlit.ipynb)|
-|--> Creating character-level tokenizer |[04](11_milestone_project_SkimLit/04_skimlit.ipynb)|
-|--> Creating character-level embedding layer |[04](11_milestone_project_SkimLit/04_skimlit.ipynb)|
-|--> Model 3: Conv1D with character embeddings |[04](11_milestone_project_SkimLit/04_skimlit.ipynb)|
-|--> Model 4: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3)|[05](11_milestone_project_SkimLit/05_skimlit.ipynb)|
-|--> Preparing dataset for multimodal data |[05](11_milestone_project_SkimLit/05_skimlit.ipynb)|
-|--> Encoding the line number feature to be used with Model 5 |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
-|--> Encoding the total lines feature to be used with Model 5 |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
-|--> Model 5: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3) + positional embeddings|[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
-|--> Compile Model 5 with label-smoothing|[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
-|--> Saving and loading the best-performing model |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
-|--> Comparing the performance of all the models |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
-|--> Creating an end to end pipeline to input abstract and get output classified text|[07](11_milestone_project_SkimLit/07_skimlit.ipynb)|
-|--> Python program to skim-through PUBMED-RCT abstracts|[main.py](11_milestone_project_SkimLit/main.py)|
+|01. Data loading and pre-processing |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
+|01.1. How we want our data to look |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
+|01.2. Getting list of sentences |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
+|01.3. Making numeric labels |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
+|02. Experiments to run |[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
+|03. Model 0: Naive Bayes with TF-IDF (baseline)|[01](11_milestone_project_SkimLit/01_skimlit.ipynb)|
+|04. Preparing data for deep sequence models |[02](11_milestone_project_SkimLit/02_skimlit.ipynb)|
+|05. Model 1: Conv1D with custom token embeddings|[02](11_milestone_project_SkimLit/02_skimlit.ipynb)|
+|06. Using pretrained embedding layer [USE (Universal Sentence Encoder)] |[03](11_milestone_project_SkimLit/03_skimlit.ipynb)|
+|07. Model 2:  Pretrained token embedding: USE-embedding layer + Dense layer |[03](11_milestone_project_SkimLit/03_skimlit.ipynb)|
+|08. Creating character-level tokenizer |[04](11_milestone_project_SkimLit/04_skimlit.ipynb)|
+|09. Creating character-level embedding layer |[04](11_milestone_project_SkimLit/04_skimlit.ipynb)|
+|10. Model 3: Conv1D with character embeddings |[04](11_milestone_project_SkimLit/04_skimlit.ipynb)|
+|11. Model 4: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3)|[05](11_milestone_project_SkimLit/05_skimlit.ipynb)|
+|12. Preparing dataset for multimodal data |[05](11_milestone_project_SkimLit/05_skimlit.ipynb)|
+|13. Encoding the line number feature to be used with Model 5 |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
+|14. Encoding the total lines feature to be used with Model 5 |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
+|15. Model 5: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3) + positional embeddings|[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
+|16. Compile Model 5 with label-smoothing|[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
+|17. Saving and loading the best-performing model |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
+|18. Comparing the performance of all the models |[06](11_milestone_project_SkimLit/06_skimlit.ipynb)|
+|19. Creating an end to end pipeline to input abstract and get output classified text|[07](11_milestone_project_SkimLit/07_skimlit.ipynb)|
+|##. Python program to skim-through PUBMED-RCT abstracts|[main.py](11_milestone_project_SkimLit/main.py)|
 
 
-| <u>[**12. Time Series forecasting using Tensorflow**](12_time_series_using_tensorflow/)</u>  ||
+| <u>[**12. Time Series forecasting using Tensorflow**](12_time_series_using_tensorflow/README.md)</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|--> Data loading and pre-processing|[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
-|--> Alternative to import data using python-csv module |[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
-|--> Creating train-test splits for time-series data (wrong-way)|[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
-|--> Creating train-test splits for time-series data (right-way)|[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
-|--> Creating plotting function to visualize time-series data |[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
-|--> Modelling Experiments |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
-|--> Building Naive model (baseline) |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
-|--> Most common time series evaluation metrics |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
-|--> Implementing MASE in code |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
-|--> Creating function to evaluate model's forcast |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
-|--> Other models for time series forcasting|[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
-|--> Windowing our dataset|[03](12_time_series_using_tensorflow/03_time_series_using_tensorflow.ipynb)|
-|--> Preprocessing function to window our dataset|[03](12_time_series_using_tensorflow/03_time_series_using_tensorflow.ipynb)|
-|--> Turning windows into training and test sets|[03](12_time_series_using_tensorflow/03_time_series_using_tensorflow.ipynb)|
-|--> Creating a modelling checkpoint callback to save our model|[04](12_time_series_using_tensorflow/04_time_series_using_tensorflow.ipynb)|
-|--> Building Dense model (model 1) (horizon = 1, window = 7)|[04](12_time_series_using_tensorflow/04_time_series_using_tensorflow.ipynb)|
-|--> Building Model 2 (same as model 1) (horizon = 1, window = 30)|[05](12_time_series_using_tensorflow/05_time_series_using_tensorflow.ipynb)|
-|--> Building Model 3 (same as model 1) (horizon = 7, window = 30)|[06](12_time_series_using_tensorflow/06_time_series_using_tensorflow.ipynb)|
-|--> Comparing modelling experiments (baseline,1,2,3)|[07](12_time_series_using_tensorflow/07_time_series_using_tensorflow.ipynb)|
-|--> Preparing data for input to sequence models |[08](12_time_series_using_tensorflow/08_time_series_using_tensorflow.ipynb)|
-|--> Building Model 4 (conv1D) (horizon = 1, window = 7)|[08](12_time_series_using_tensorflow/08_time_series_using_tensorflow.ipynb)|
-|--> Building Model 5 (LSTM) (horizon = 1, window = 7)|[09](12_time_series_using_tensorflow/09_time_series_using_tensorflow.ipynb)|
-|--> Multivariate time series (Model 6)|[10](12_time_series_using_tensorflow/10_time_series_using_tensorflow.ipynb)|
-|--> Making a windowed dataset using Pandas|[10](12_time_series_using_tensorflow/10_time_series_using_tensorflow.ipynb)|
-|--> Replicating N-BEATS algorithm (Model 7)|[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> --> Building and testing the N-BEATS block layer|[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> --> Creating a performant data pipeline using `tf.data` |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> --> Setting up hyperparameters for N-BEATS (Generic version) with Daily data |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> --> Setting up residual connections in N-BEATS |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> --> Building, Compiling and fitting the N-Beats algorithm |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> --> Saving and loading N-BEATS model |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> --> Plotting the N-BEATS architecture  |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
-|--> Creating an ensemble (Model 8) |[12](12_time_series_using_tensorflow/12_time_series_using_tensorflow.ipynb)|
-|--> Saving and loading trained ensemble model |[12](12_time_series_using_tensorflow/12_time_series_using_tensorflow.ipynb)|
-|--> Importance of prediction intervals (uncertainity estimates) in forcasting |[12](12_time_series_using_tensorflow/12_time_series_using_tensorflow.ipynb)|
-|--> Types of uncertainity in machine learning |[13](12_time_series_using_tensorflow/13_time_series_using_tensorflow.ipynb)|
-|--> Future Prediction Model (Model 9)|[13](12_time_series_using_tensorflow/13_time_series_using_tensorflow.ipynb)|
-|--> Black Swan Theory - The turkey problem (Model 10) (same as model 1) (horizon = 1, window = 7) |[14](12_time_series_using_tensorflow/14_time_series_using_tensorflow.ipynb)|
-|--> Comparing the models trained so far |[15](12_time_series_using_tensorflow/15_time_series_using_tensorflow.ipynb)|
+|01. Data loading and pre-processing|[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
+|02. Alternative to import data using python-csv module |[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
+|03. Creating train-test splits for time-series data (wrong-way)|[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
+|04. Creating train-test splits for time-series data (right-way)|[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
+|05. Creating plotting function to visualize time-series data |[01](12_time_series_using_tensorflow/01_time_series_using_tensorflow.ipynb)|
+|06. Modelling Experiments |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
+|07. Building Naive model (baseline) |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
+|08. Most common time series evaluation metrics |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
+|09. Implementing MASE in code |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
+|10. Creating function to evaluate model's forcast |[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
+|11. Other models for time series forcasting|[02](12_time_series_using_tensorflow/02_time_series_using_tensorflow.ipynb)|
+|12. Windowing our dataset|[03](12_time_series_using_tensorflow/03_time_series_using_tensorflow.ipynb)|
+|13. Preprocessing function to window our dataset|[03](12_time_series_using_tensorflow/03_time_series_using_tensorflow.ipynb)|
+|14. Turning windows into training and test sets|[03](12_time_series_using_tensorflow/03_time_series_using_tensorflow.ipynb)|
+|15. Creating a modelling checkpoint callback to save our model|[04](12_time_series_using_tensorflow/04_time_series_using_tensorflow.ipynb)|
+|16. Building Dense model (model 1) (horizon = 1, window = 7)|[04](12_time_series_using_tensorflow/04_time_series_using_tensorflow.ipynb)|
+|17. Building Model 2 (same as model 1) (horizon = 1, window = 30)|[05](12_time_series_using_tensorflow/05_time_series_using_tensorflow.ipynb)|
+|18. Building Model 3 (same as model 1) (horizon = 7, window = 30)|[06](12_time_series_using_tensorflow/06_time_series_using_tensorflow.ipynb)|
+|19. Comparing modelling experiments (baseline,1,2,3)|[07](12_time_series_using_tensorflow/07_time_series_using_tensorflow.ipynb)|
+|20. Preparing data for input to sequence models |[08](12_time_series_using_tensorflow/08_time_series_using_tensorflow.ipynb)|
+|21. Building Model 4 (conv1D) (horizon = 1, window = 7)|[08](12_time_series_using_tensorflow/08_time_series_using_tensorflow.ipynb)|
+|22. Building Model 5 (LSTM) (horizon = 1, window = 7)|[09](12_time_series_using_tensorflow/09_time_series_using_tensorflow.ipynb)|
+|23. Multivariate time series (Model 6)|[10](12_time_series_using_tensorflow/10_time_series_using_tensorflow.ipynb)|
+|24. Making a windowed dataset using Pandas|[10](12_time_series_using_tensorflow/10_time_series_using_tensorflow.ipynb)|
+|25. Replicating N-BEATS algorithm (Model 7)|[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|25.1. Building and testing the N-BEATS block layer|[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|25.2. Creating a performant data pipeline using `tf.data` |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|25.3. Setting up hyperparameters for N-BEATS (Generic version) with Daily data |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|25.4. Setting up residual connections in N-BEATS |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|25.5. Building, Compiling and fitting the N-Beats algorithm |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|25.6. Saving and loading N-BEATS model |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|25.7. Plotting the N-BEATS architecture  |[11](12_time_series_using_tensorflow/11_time_series_using_tensorflow.ipynb)|
+|26. Creating an ensemble (Model 8) |[12](12_time_series_using_tensorflow/12_time_series_using_tensorflow.ipynb)|
+|27. Saving and loading trained ensemble model |[12](12_time_series_using_tensorflow/12_time_series_using_tensorflow.ipynb)|
+|28. Importance of prediction intervals (uncertainity estimates) in forcasting |[12](12_time_series_using_tensorflow/12_time_series_using_tensorflow.ipynb)|
+|29. Types of uncertainity in machine learning |[13](12_time_series_using_tensorflow/13_time_series_using_tensorflow.ipynb)|
+|30. Future Prediction Model (Model 9)|[13](12_time_series_using_tensorflow/13_time_series_using_tensorflow.ipynb)|
+|31. Black Swan Theory - The turkey problem (Model 10) (same as model 1) (horizon = 1, window = 7) |[14](12_time_series_using_tensorflow/14_time_series_using_tensorflow.ipynb)|
+|32. Comparing the models trained so far |[15](12_time_series_using_tensorflow/15_time_series_using_tensorflow.ipynb)|

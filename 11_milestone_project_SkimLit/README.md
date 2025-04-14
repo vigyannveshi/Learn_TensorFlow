@@ -3,29 +3,29 @@
 | <u>**11. Capstone - Project: SkimLit**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook/Scripts** |
-|--> Data loading and pre-processing |[01](01_skimlit.ipynb)|
-|--> --> How we want our data to look |[01](01_skimlit.ipynb)|
-|--> --> Getting list of sentences |[01](01_skimlit.ipynb)|
-|--> --> Making numeric labels |[01](01_skimlit.ipynb)|
-|--> Experiments to run |[01](01_skimlit.ipynb)|
-|--> Model 0: Naive Bayes with TF-IDF (baseline)|[01](01_skimlit.ipynb)|
-|--> Preparing data for deep sequence models |[02](02_skimlit.ipynb)|
-|--> Model 1: Conv1D with custom token embeddings|[02](02_skimlit.ipynb)|
-|--> Using pretrained embedding layer [USE (Universal Sentence Encoder)] |[03](03_skimlit.ipynb)|
-|--> Model 2:  Pretrained token embedding: USE-embedding layer + Dense layer |[03](03_skimlit.ipynb)|
-|--> Creating character-level tokenizer |[04](04_skimlit.ipynb)|
-|--> Creating character-level embedding layer |[04](04_skimlit.ipynb)|
-|--> Model 3: Conv1D with character embeddings |[04](04_skimlit.ipynb)|
-|--> Model 4: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3)|[05](05_skimlit.ipynb)|
-|--> Preparing dataset for multimodal data |[05](05_skimlit.ipynb)|
-|--> Encoding the line number feature to be used with Model 5 |[06](06_skimlit.ipynb)|
-|--> Encoding the total lines feature to be used with Model 5 |[06](06_skimlit.ipynb)|
-|--> Model 5: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3) + positional embeddings|[06](06_skimlit.ipynb)|
-|--> Compile Model 5 with label-smoothing|[06](06_skimlit.ipynb)|
-|--> Saving and loading the best-performing model |[06](06_skimlit.ipynb)|
-|--> Comparing the performance of all the models |[06](06_skimlit.ipynb)|
-|--> Creating an end to end pipeline to input abstract and get output classified text|[07](07_skimlit.ipynb)|
-|--> Python program to skim-through PUBMED-RCT abstracts|[main.py](main.py)|
+|01. Data loading and pre-processing |[01](01_skimlit.ipynb)|
+|01.1. How we want our data to look |[01](01_skimlit.ipynb)|
+|01.2. Getting list of sentences |[01](01_skimlit.ipynb)|
+|01.3. Making numeric labels |[01](01_skimlit.ipynb)|
+|02. Experiments to run |[01](01_skimlit.ipynb)|
+|03. Model 0: Naive Bayes with TF-IDF (baseline)|[01](01_skimlit.ipynb)|
+|04. Preparing data for deep sequence models |[02](02_skimlit.ipynb)|
+|05. Model 1: Conv1D with custom token embeddings|[02](02_skimlit.ipynb)|
+|06. Using pretrained embedding layer [USE (Universal Sentence Encoder)] |[03](03_skimlit.ipynb)|
+|07. Model 2:  Pretrained token embedding: USE-embedding layer + Dense layer |[03](03_skimlit.ipynb)|
+|08. Creating character-level tokenizer |[04](04_skimlit.ipynb)|
+|09. Creating character-level embedding layer |[04](04_skimlit.ipynb)|
+|10. Model 3: Conv1D with character embeddings |[04](04_skimlit.ipynb)|
+|11. Model 4: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3)|[05](05_skimlit.ipynb)|
+|12. Preparing dataset for multimodal data |[05](05_skimlit.ipynb)|
+|13. Encoding the line number feature to be used with Model 5 |[06](06_skimlit.ipynb)|
+|14. Encoding the total lines feature to be used with Model 5 |[06](06_skimlit.ipynb)|
+|15. Model 5: Multi-modal input model with Pretrained token embeddings (same as 2) + character embedding (same as 3) + positional embeddings|[06](06_skimlit.ipynb)|
+|16. Compile Model 5 with label-smoothing|[06](06_skimlit.ipynb)|
+|17. Saving and loading the best-performing model |[06](06_skimlit.ipynb)|
+|18. Comparing the performance of all the models |[06](06_skimlit.ipynb)|
+|19. Creating an end to end pipeline to input abstract and get output classified text|[07](07_skimlit.ipynb)|
+|##. Python program to skim-through PUBMED-RCT abstracts|[main.py](main.py)|
 
 ### Breaking abstract into sections
 * Run `python3 main.py --filename "yourfile.txt"`

@@ -3,15 +3,15 @@
 | <u>**10. Natural Language Processing using Tensorflow**</u>  ||
 |---------|----------|
 | **Concept** | **Notebook** |
-|1. Introduction to NLP fundementals |[01](01_nlp_using_tensorflow.ipynb)|
-|2. Visualizing a text dataset |[01](01_nlp_using_tensorflow.ipynb)|
-|3. Splitting data into training and validation set |[01](01_nlp_using_tensorflow.ipynb)|
-|4. Converting text to numbers using tokenization and embedding them |[01](01_nlp_using_tensorflow.ipynb)|
-|5. Modelling a text-dataset (running series of experiments) |[01](01_nlp_using_tensorflow.ipynb)|
-|6. Model 0: creation and evaluation |[01](01_nlp_using_tensorflow.ipynb)|
-|7. Creating an evaluation metric function |[01](01_nlp_using_tensorflow.ipynb)|
-|8. Model 1: [Feed forward Neural Network (dense model)]: creation and evaluation |[02](02_nlp_using_tensorflow.ipynb)|
-|9. Visualizing our model's learned word embeddings |[02](02_nlp_using_tensorflow.ipynb)|
+|01. Introduction to NLP fundementals |[01](01_nlp_using_tensorflow.ipynb)|
+|02. Visualizing a text dataset |[01](01_nlp_using_tensorflow.ipynb)|
+|03. Splitting data into training and validation set |[01](01_nlp_using_tensorflow.ipynb)|
+|04. Converting text to numbers using tokenization and embedding them |[01](01_nlp_using_tensorflow.ipynb)|
+|05. Modelling a text-dataset (running series of experiments) |[01](01_nlp_using_tensorflow.ipynb)|
+|06. Model 0: creation and evaluation |[01](01_nlp_using_tensorflow.ipynb)|
+|07. Creating an evaluation metric function |[01](01_nlp_using_tensorflow.ipynb)|
+|08. Model 1: [Feed forward Neural Network (dense model)]: creation and evaluation |[02](02_nlp_using_tensorflow.ipynb)|
+|09. Visualizing our model's learned word embeddings |[02](02_nlp_using_tensorflow.ipynb)|
 |10. Recurrent Neural Networks (RNNs)|[03](03_nlp_using_tensorflow.ipynb)|
 |11. Model 2: [LSTM (RNN)] |[03](03_nlp_using_tensorflow.ipynb)|
 |12. Model 3: [GRU (RNN)] |[04](04_nlp_using_tensorflow.ipynb)|

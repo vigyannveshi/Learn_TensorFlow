@@ -13,6 +13,7 @@ important_reference_links.txt
 **/*10_food_classes_1_percent
 **/*101_food_classes_10_percent
 **/pubmed-rct
+**/MSRA10K_Imgs_GT
 
 # checkpoints to be ignored
 **/model_checkpoints.zip

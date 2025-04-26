@@ -8,6 +8,7 @@
 |01. Building the Bottleneck inverted residual block (BIR)  |[01](01_cp1.ipynb)|
 |02. Creating the encoder section  |[01](01_cp1.ipynb)|
 |03. Adding pre-trained weights of MobileNet-v2 (imagenet) to encoder layer, and setting `trainable=False` except the expand layer in the first block |[01](01_cp1.ipynb)|
+|04. Building the inception block |[02](02_cp1.ipynb)|
 
 
 ### Notes (Introduction)

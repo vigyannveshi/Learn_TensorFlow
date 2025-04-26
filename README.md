@@ -276,3 +276,9 @@ The creators of the course have worked very hard in their content, and please re
 |30. Future Prediction Model (Model 9)|[13](12_time_series_using_tensorflow/13_time_series_using_tensorflow.ipynb)|
 |31. Black Swan Theory - The turkey problem (Model 10) (same as model 1) (horizon = 1, window = 7) |[14](12_time_series_using_tensorflow/14_time_series_using_tensorflow.ipynb)|
 |32. Comparing the models trained so far |[15](12_time_series_using_tensorflow/15_time_series_using_tensorflow.ipynb)|
+
+
+| <u>[**13. Computer Vision Architectures using Tensorflow**](13_computer_vision_architectures/README.md)</u> ||
+|---------|----------|
+| **Concept** | **Notebook/Subfolder/Script** |
+|##. CP1: Replicating QUICKSAL |[CP1](13_computer_vision_architectures/CP1/README.md)|

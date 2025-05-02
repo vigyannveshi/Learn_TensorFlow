@@ -1,5 +1,68 @@
 ### ↩️ [**Computer Vision Architectures using Tensorflow**](../README.md)
 
+### **Replicating QUICKSAL**
+  <!-- |BottleNeck Inverted Residual (BIR) Block|Implementated (BIR) Block|
+  |---|---|
+  |<img src = "BIR.png"/>|<img src = "bir_block.png" height = 500/>|
+
+  <br>
+  <br>
+
+  |Inception Block|Implementated Inception Block|
+  |---|---|
+  |<img src = "INCEPTION_BLOCK.png"/>|<img src = "inception_block.png" width = 800/>|
+
+  <br>
+  <br>
+
+  |QUICKSAL|Implementated QUICKSAL|
+  |---|---|
+  |<img src = "QUICKSAL.png"/>|<img src = "quicksal_vis.png" width = 900/>| -->
+
+  <!-- Bottleneck Inverted Residual (BIR) Block -->
+<b>➤ Bottleneck Inverted Residual (BIR) Block</b>
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>BottleNeck Inverted Residual (BIR) Block</th>
+    <th>Implemented (BIR) Block</th>
+  </tr>
+  <tr>
+    <td><img src="BIR.png"/></td>
+    <td><img src="bir_block.png" height="500"/></td>
+  </tr>
+</table>
+
+<br><br>
+
+<!-- Inception Block -->
+<b>➤ Inception Block</b>
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>Inception Block</th>
+    <th>Implemented Inception Block</th>
+  </tr>
+  <tr>
+    <td><img src="INCEPTION_BLOCK.png"/></td>
+    <td><img src="inception_block.png" width="800"/></td>
+  </tr>
+</table>
+
+<br><br>
+
+<!-- QUICKSAL -->
+<b>➤ QUICKSAL</b>
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <th>QUICKSAL</th>
+    <th>Implemented QUICKSAL</th>
+  </tr>
+  <tr>
+    <td><img src="QUICKSAL.png"/></td>
+    <td><img src="quicksal_vis.png" width="900"/></td>
+  </tr>
+</table>
+
+
 ### Content
 
 | <u>**CP1: Replicating QUICKSAL**</u> ||

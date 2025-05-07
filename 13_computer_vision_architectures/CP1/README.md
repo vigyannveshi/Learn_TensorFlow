@@ -111,7 +111,8 @@
   * We allow mixed-precision training to speed up training.
   * We use [`ModelCheckpoint(save_best_only = True, save_weights_only = False)`,<br> `EarlyStopping(patience = 10, monitor = 'val_loss')`,<br> `CyclicLR(base_lr=1e-4, max_lr=1e-3, step_size=2000)`] callbacks.
   * Leslie Smith (who invented CyclicLR) recommends to set step_size between 2× and 10× the number of batches in one epoch. Reference: [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/pdf/1506.01186)
-  * In our case batches per epoch = 8000/32 = 250, 
+  * In our case batches per epoch = 8000/32 = 250,
+   
       |Option|	Step Size|
       |---|---|
       |Small cycle	2 × 250 |500 batches|
@@ -136,15 +137,15 @@
       * Soln: We will use the mobilenet-v2 model as it is (including the first layer) and improve the encoder, here the encoder is some-kind of feature extractor model.
       * Attempted the above solution and tried fitting, no change at all, still model not learning.
        
-      2. May be too much data to train?
+      1. May be too much data to train?
       * Soln: Use only 10% train and 10% val data, and check if we can overfit the model
       * Attempted the above solution and tried fitting, mode still not learning.
 
-      3. Vanishing gradient problem?
+      1. Vanishing gradient problem?
       * Soln: Use a scaled MAE loss. Scale MAE but 1e3
       * Attempted this, but no-GPU time remaining on colab, GPU running extremely slow hence can't verify.
       
-      4. May be connections in model are not correct?
+      1. May be connections in model are not correct?
       * Solution: Visualise the entire model - every block 
       * Visualized model, model created as expected.
     * Most probable reason --> some kind of vanishing gradients, needs a better loss function

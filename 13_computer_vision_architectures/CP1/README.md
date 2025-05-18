@@ -106,6 +106,7 @@
   $F_{\beta} = \frac{(1+\beta^2) \cdot Precision \cdot Recall}{(\beta^2) \cdot Precision + Recall}$
   <br>
   <br>
+  
   * The loss function is not explicitly mentioned in the paper. We will use Mean Absolute Error (MAE) as a loss function, considering it is a common metric used also to compare the model with the other SOTA available.
   * They have used Adam optimizer with CyclicLR schedular {base LR = 1e-4, max LR = 1e-3}
   * They have trained the model on MSRA10K dataset with train/val/test split of 0.8/0.1/0.1 respectively. This can be downloaded from: http://mftp.mmcheng.net/Data/MSRA10K_Imgs_GT.zip
@@ -113,7 +114,7 @@
   * We use [`ModelCheckpoint(save_best_only = True, save_weights_only = False)`,<br> `EarlyStopping(patience = 10, monitor = 'val_loss')`,<br> `CyclicLR(base_lr=1e-4, max_lr=1e-3, step_size=2000)`] callbacks.
   * Leslie Smith (who invented CyclicLR) recommends to set step_size between 2× and 10× the number of batches in one epoch. Reference: [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/pdf/1506.01186)
   * In our case batches per epoch = 8000/32 = 250,
-   
+  <br>
     |Option|	Step Size|
     |---|---|
     |Small cycle	2 × 250 |500 batches|

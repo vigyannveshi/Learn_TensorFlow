@@ -139,13 +139,18 @@
        
       1. May be too much data to train?
       * Soln: Use only 10% train and 10% val data, and check if we can overfit the model
-      * Attempted the above solution and tried fitting, mode still not learning.
+      * Attempted the above solution and tried fitting, model still not learning.
 
+<<<<<<< HEAD
       1. Vanishing gradient problem?
       * Soln: Use a scaled MAE loss. Scale MAE but 1e3
+=======
+      3. Vanishing gradient problem?
+      * Soln: Use a scaled MAE loss. Scale MAE by 1e3
+>>>>>>> 40851d3a874bbc9a4fcac8b1beed4b5bd8e68586
       * Attempted this, but no-GPU time remaining on colab, GPU running extremely slow hence can't verify.
       
       1. May be connections in model are not correct?
       * Solution: Visualise the entire model - every block 
       * Visualized model, model created as expected.
-    * Most probable reason --> some kind of vanishing gradients, needs a better loss function
+    * Most probable reason --> some kind of vanishing gradients or  needs a better loss function

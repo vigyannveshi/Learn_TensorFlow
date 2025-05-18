@@ -3,7 +3,7 @@
 ### Content
 | <u>**13. Computer Vision Architectures using Tensorflow**</u> ||
 |---------|----------|
-| **Concept** | **Notebook** |
+| **Concept** | **Notebook/README** |
 |##. CP1: Replicating QUICKSAL |[CP1](CP1/README.md)|
 
 

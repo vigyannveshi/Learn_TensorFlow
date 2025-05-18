@@ -105,6 +105,7 @@
   <br>
   $F_{\beta} = \frac{(1+\beta^2) \cdot Precision \cdot Recall}{(\beta^2) \cdot Precision + Recall}$
   <br>
+  <br>
   * The loss function is not explicitly mentioned in the paper. We will use Mean Absolute Error (MAE) as a loss function, considering it is a common metric used also to compare the model with the other SOTA available.
   * They have used Adam optimizer with CyclicLR schedular {base LR = 1e-4, max LR = 1e-3}
   * They have trained the model on MSRA10K dataset with train/val/test split of 0.8/0.1/0.1 respectively. This can be downloaded from: http://mftp.mmcheng.net/Data/MSRA10K_Imgs_GT.zip
@@ -113,11 +114,11 @@
   * Leslie Smith (who invented CyclicLR) recommends to set step_size between 2× and 10× the number of batches in one epoch. Reference: [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/pdf/1506.01186)
   * In our case batches per epoch = 8000/32 = 250,
    
-      |Option|	Step Size|
-      |---|---|
-      |Small cycle	2 × 250 |500 batches|
-      |Medium cycle	4 × 250 | 1000 batches|
-      |Big cycle	8 × 250   | 2000 batches|
+    |Option|	Step Size|
+    |---|---|
+    |Small cycle	2 × 250 |500 batches|
+    |Medium cycle	4 × 250 | 1000 batches|
+    |Big cycle	8 × 250   | 2000 batches|
   
   * Choosing step_size= 2000 
     * 2000 is ~8 epochs.
@@ -137,20 +138,15 @@
       * Soln: We will use the mobilenet-v2 model as it is (including the first layer) and improve the encoder, here the encoder is some-kind of feature extractor model.
       * Attempted the above solution and tried fitting, no change at all, still model not learning.
        
-      1. May be too much data to train?
+      2. May be too much data to train?
       * Soln: Use only 10% train and 10% val data, and check if we can overfit the model
       * Attempted the above solution and tried fitting, model still not learning.
 
-<<<<<<< HEAD
-      1. Vanishing gradient problem?
-      * Soln: Use a scaled MAE loss. Scale MAE but 1e3
-=======
       3. Vanishing gradient problem?
       * Soln: Use a scaled MAE loss. Scale MAE by 1e3
->>>>>>> 40851d3a874bbc9a4fcac8b1beed4b5bd8e68586
       * Attempted this, but no-GPU time remaining on colab, GPU running extremely slow hence can't verify.
       
-      1. May be connections in model are not correct?
+      4. May be connections in model are not correct?
       * Solution: Visualise the entire model - every block 
       * Visualized model, model created as expected.
     * Most probable reason --> some kind of vanishing gradients or  needs a better loss function
